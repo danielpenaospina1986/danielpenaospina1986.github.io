@@ -111,7 +111,11 @@
         "tulio_exterior.jpg",
         "tulio_interior.jpg",
         "tulio_cd2.jpg",
-        "tulio_cd1.jpg"
+        "tulio_cd1.jpg",
+        "tulio_rvt_1.jpg",
+        "tulio_rvt_2.jpg",
+        "tulio_rvt_3.jpg",
+        "tulio_rvt_4.jpg"
       ]
     },
     {
@@ -327,7 +331,9 @@
         "centrodia_render.jpg",
         "centrodia_cd3.jpg",
         "centrodia_cd2.jpg",
-        "centrodia_cd1.jpg"
+        "centrodia_cd1.jpg",
+        "centrodia_rvt_1.jpg",
+        "centrodia_rvt_2.jpg"
       ]
     },
     {
@@ -456,7 +462,10 @@
       "cover": "pravia_2.jpg",
       "imgs": [
         "pravia_2.jpg",
-        "pravia_1.jpg"
+        "pravia_1.jpg",
+        "pravia_rvt_1.jpg",
+        "pravia_rvt_2.jpg",
+        "pravia_rvt_3.jpg"
       ]
     },
     {
@@ -563,6 +572,90 @@
       "team": "",
       "desc": "",
       "desc_es": ""
+    },
+    {
+      "id": "mariacano",
+      "hier": 2,
+      "use": "educational",
+      "title": "María Cano University",
+      "title_es": "Universidad María Cano",
+      "use_label": "",
+      "use_label_es": "",
+      "location": "Medellín, Colombia",
+      "location_es": "",
+      "badge": "BIM Manager",
+      "badge_es": "",
+      "role": "Role: BIM Manager",
+      "role_es": "Rol: BIM Manager",
+      "duration": "1 year",
+      "duration_es": "1 año",
+      "tools": "Revit",
+      "team": "A+U Arquitectos Urbanistas",
+      "desc": "New tower for the María Cano University Foundation in Medellín. Led BIM coordination and modeling protocols; the full Revit model was developed in-house — model views close the gallery.",
+      "desc_es": "Nueva torre para la Fundación Universitaria María Cano en Medellín. Lideré la coordinación BIM y los protocolos de modelado; el modelo Revit completo se desarrolló internamente — las vistas del modelo cierran la galería.",
+      "cover": "mariacano_1.jpg",
+      "imgs": [
+        "mariacano_1.jpg",
+        "mariacano_2.jpg",
+        "mariacano_3.jpg",
+        "mariacano_rvt_1.jpg",
+        "mariacano_rvt_2.jpg"
+      ]
+    },
+    {
+      "id": "centenario",
+      "hier": 3,
+      "use": "urbanism",
+      "title": "Parque Centenario Competition",
+      "title_es": "Concurso Parque Centenario",
+      "use_label": "",
+      "use_label_es": "",
+      "location": "Colombia",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Open competition entry",
+      "role_es": "Propuesta de concurso",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "desc": "Open design competition entry for Parque Centenario. The full competition boards are included in the gallery.",
+      "desc_es": "Propuesta para el concurso abierto de diseño del Parque Centenario. Las planchas completas del concurso están incluidas en la galería.",
+      "cover": "centenario_1.jpg",
+      "imgs": [
+        "centenario_1.jpg",
+        "centenario_plancha_1.jpg",
+        "centenario_plancha_2.jpg",
+        "centenario_plancha_3.jpg"
+      ]
+    },
+    {
+      "id": "lamariagym",
+      "hier": 3,
+      "use": "sports",
+      "title": "La María Gym",
+      "title_es": "Gimnasio La María",
+      "use_label": "",
+      "use_label_es": "",
+      "location": "Bogotá, Colombia",
+      "location_es": "",
+      "badge": "dapo.arq",
+      "badge_es": "",
+      "role": "Design + Visualization — concept",
+      "role_es": "Diseño + Visualización — concepto",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "Daniel Peña Ospina",
+      "desc": "Concept design for a gym pavilion on the La María property — a companion to the multi-purpose events pavilion.",
+      "desc_es": "Diseño conceptual de un gimnasio en el predio La María — complemento del pabellón de eventos polivalente.",
+      "cover": "lamariagym_1.jpg",
+      "imgs": [
+        "lamariagym_1.jpg",
+        "lamariagym_2.jpg",
+        "lamariagym_3.jpg"
+      ]
     }
   ]
 }
