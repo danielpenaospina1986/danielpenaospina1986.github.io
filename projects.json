@@ -520,6 +520,34 @@
         "vvc_2.jpg",
         "vvc_1.jpg"
       ]
+    },
+    {
+      "id": "coordinadora_hub",
+      "hier": 2,
+      "use": "civic",
+      "title": "Coordinadora HUB",
+      "imgs": [
+        "proyecto_coordinadora_cota_02.jpg",
+        "proyecto_coordinadora_cota_02_1.jpg",
+        "proyecto_coordinadora_cota_05.jpg",
+        "proyecto_coordinadora_cota_07.jpg"
+      ],
+      "cover": "proyecto_coordinadora_cota_02_1.jpg",
+      "title_es": "HUB Coordinadora",
+      "badge": "",
+      "badge_es": "",
+      "location": "Bogotá, Colombia",
+      "location_es": "Bogotá, Colombia",
+      "use_label": "",
+      "use_label_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "desc": "",
+      "desc_es": ""
     }
   ]
 }
