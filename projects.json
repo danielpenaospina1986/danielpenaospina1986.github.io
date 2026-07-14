@@ -1,13 +1,45 @@
 {
   "uses": [
-    { "id": "residential", "en": "Residential", "es": "Residencial" },
-    { "id": "healthcare", "en": "Healthcare", "es": "Salud" },
-    { "id": "educational", "en": "Educational", "es": "Educativo" },
-    { "id": "sports", "en": "Sports", "es": "Deportivo" },
-    { "id": "civic", "en": "Civic", "es": "Equipamiento" },
-    { "id": "commercial", "en": "Commercial", "es": "Comercial" },
-    { "id": "hospitality", "en": "Hospitality", "es": "Hotelero" },
-    { "id": "interiors", "en": "Interiors", "es": "Interiorismo" }
+    {
+      "id": "residential",
+      "en": "Residential",
+      "es": "Residencial"
+    },
+    {
+      "id": "healthcare",
+      "en": "Healthcare",
+      "es": "Salud"
+    },
+    {
+      "id": "educational",
+      "en": "Educational",
+      "es": "Educativo"
+    },
+    {
+      "id": "sports",
+      "en": "Sports",
+      "es": "Deportivo"
+    },
+    {
+      "id": "civic",
+      "en": "Civic",
+      "es": "Equipamiento"
+    },
+    {
+      "id": "commercial",
+      "en": "Commercial",
+      "es": "Comercial"
+    },
+    {
+      "id": "hospitality",
+      "en": "Hospitality",
+      "es": "Hotelero"
+    },
+    {
+      "id": "interiors",
+      "en": "Interiors",
+      "es": "Interiorismo"
+    }
   ],
   "projects": [
     {
@@ -31,7 +63,13 @@
       "desc": "Hospital designed by Safdie Architects and advised by Johns Hopkins Medicine International. Part of the team responsible for the full Construction Documents set, coordinating with structural and MEP disciplines.",
       "desc_es": "Hospital diseñado por Safdie Architects y asesorado por Johns Hopkins Medicine International. Parte del equipo responsable del set completo de documentos de construcción, con coordinación de estructuras y MEP.",
       "cover": "chsdm_facade.jpg",
-      "imgs": ["chsdm_facade.jpg", "chsdm_exterior.jpg", "chsdm_lobby.jpg", "chsdm_renders.jpg", "chsdm_drawings.jpg"]
+      "imgs": [
+        "chsdm_facade.jpg",
+        "chsdm_exterior.jpg",
+        "chsdm_lobby.jpg",
+        "chsdm_renders.jpg",
+        "chsdm_drawings.jpg"
+      ]
     },
     {
       "id": "tulio",
@@ -54,11 +92,16 @@
       "desc": "New stadium for the wrestling league and an aquatics stadium within a multi-sport complex. Led BIM coordination and CD production.",
       "desc_es": "Nuevo estadio para la liga de lucha y un estadio acuático dentro de un complejo multideporte. Lideré la coordinación BIM y la producción de CD.",
       "cover": "tulio_exterior.jpg",
-      "imgs": ["tulio_exterior.jpg", "tulio_interior.jpg", "tulio_cd2.jpg", "tulio_cd1.jpg"]
+      "imgs": [
+        "tulio_exterior.jpg",
+        "tulio_interior.jpg",
+        "tulio_cd2.jpg",
+        "tulio_cd1.jpg"
+      ]
     },
     {
       "id": "estadio",
-      "hier": 2,
+      "hier": 3,
       "use": "sports",
       "title": "Atlético Nacional Stadium",
       "title_es": "Estadio Atlético Nacional",
@@ -77,7 +120,10 @@
       "desc": "Conceptual stadium proposal for Atlético Nacional — a circular volume wrapped in a perforated brick lattice that nods to Medellín's brick tradition and the club's identity.",
       "desc_es": "Propuesta conceptual de estadio para Atlético Nacional — un volumen circular envuelto en una celosía de ladrillo perforado que evoca la tradición del ladrillo de Medellín y la identidad del club.",
       "cover": "estadio_1.jpg",
-      "imgs": ["estadio_1.jpg", "estadio_2.jpg"]
+      "imgs": [
+        "estadio_1.jpg",
+        "estadio_2.jpg"
+      ]
     },
     {
       "id": "arkadia",
@@ -85,26 +131,33 @@
       "use": "commercial",
       "title": "Arkadia Shopping Mall",
       "title_es": "Centro Comercial Arkadia",
-      "use_label": "",
-      "use_label_es": "",
+      "use_label": "Commercial Mall",
+      "use_label_es": "Centro Comercial",
       "location": "Medellín, Colombia",
       "location_es": "",
       "badge": "",
       "badge_es": "",
       "role": "",
       "role_es": "",
-      "duration": "",
-      "duration_es": "",
-      "tools": "",
-      "team": "",
+      "duration": "2 years",
+      "duration_es": "2 años",
+      "tools": "Revit - DD development",
+      "team": "A+U Arquitectos Urbanistas - AIA Arquitectos e Ingenieros Asociados - Coninsa Ramon H.",
       "desc": "Arkadia shopping mall in Medellín — a retail landmark with a timber-clad, green façade, featured in Abrasce's Shopping Centers magazine (ed. 245).",
       "desc_es": "Centro comercial Arkadia en Medellín — un hito comercial de fachada verde revestida en madera, destacado en la revista Shopping Centers de Abrasce (ed. 245).",
       "cover": "arkadia_1.jpg",
-      "imgs": ["arkadia_1.jpg", "arkadia_2.jpg", "arkadia_3.jpg", "arkadia_4.jpg", "arkadia_5.jpg", "arkadia_6.jpg"]
+      "imgs": [
+        "arkadia_1.jpg",
+        "arkadia_2.jpg",
+        "arkadia_3.jpg",
+        "arkadia_4.jpg",
+        "arkadia_5.jpg",
+        "arkadia_6.jpg"
+      ]
     },
     {
       "id": "cesde",
-      "hier": 2,
+      "hier": 4,
       "use": "educational",
       "title": "CESDE II",
       "title_es": "CESDE II",
@@ -123,7 +176,10 @@
       "desc": "New building for the CESDE educational institution in downtown Medellín.",
       "desc_es": "Nuevo edificio para la institución educativa CESDE en el centro de Medellín.",
       "cover": "cesde_1.jpg",
-      "imgs": ["cesde_1.jpg", "cesde_2.jpg"]
+      "imgs": [
+        "cesde_1.jpg",
+        "cesde_2.jpg"
+      ]
     },
     {
       "id": "3co",
@@ -146,7 +202,12 @@
       "desc": "Office building proposal with a commercial ground floor and planted terraces carved into a timber-and-glass volume.",
       "desc_es": "Propuesta de edificio de oficinas con primer piso comercial y terrazas ajardinadas excavadas en un volumen de madera y vidrio.",
       "cover": "3co_1.jpg",
-      "imgs": ["3co_1.jpg", "3co_2.jpg", "3co_3.jpg", "3co_4.jpg"]
+      "imgs": [
+        "3co_1.jpg",
+        "3co_2.jpg",
+        "3co_3.jpg",
+        "3co_4.jpg"
+      ]
     },
     {
       "id": "santaelena",
@@ -169,7 +230,10 @@
       "desc": "Single-family house in the misty hills of Santa Elena. Design and visualization developed as independent practice under dapo.arq.",
       "desc_es": "Vivienda unifamiliar entre la niebla de Santa Elena. Diseño y visualización desarrollados como práctica independiente bajo dapo.arq.",
       "cover": "santaelena_1.jpg",
-      "imgs": ["santaelena_1.jpg", "santaelena_2.jpg"]
+      "imgs": [
+        "santaelena_1.jpg",
+        "santaelena_2.jpg"
+      ]
     },
     {
       "id": "llanogrande",
@@ -192,11 +256,14 @@
       "desc": "Country house in Llanogrande. Design and visualization developed as independent practice under dapo.arq.",
       "desc_es": "Casa campestre en Llanogrande. Diseño y visualización desarrollados como práctica independiente bajo dapo.arq.",
       "cover": "llanogrande_1.jpg",
-      "imgs": ["llanogrande_1.jpg", "llanogrande_2.jpg"]
+      "imgs": [
+        "llanogrande_1.jpg",
+        "llanogrande_2.jpg"
+      ]
     },
     {
       "id": "orlando",
-      "hier": 3,
+      "hier": 4,
       "use": "interiors",
       "title": "Orlando Apartment Interiors",
       "title_es": "Interiorismo Apartamento Orlando",
@@ -211,11 +278,14 @@
       "duration": "",
       "duration_es": "",
       "tools": "",
-      "team": "Daniel Peña Ospina",
+      "team": "Daniel Peña Ospina + Cataleia Spaces",
       "desc": "Interior design and visualization for a residential apartment in Orlando, Florida — independent practice under dapo.arq.",
       "desc_es": "Diseño interior y visualización para un apartamento residencial en Orlando, Florida — práctica independiente bajo dapo.arq.",
       "cover": "orlando_1.jpg",
-      "imgs": ["orlando_1.jpg", "orlando_2.jpg"]
+      "imgs": [
+        "orlando_1.jpg",
+        "orlando_2.jpg"
+      ]
     },
     {
       "id": "centrodia",
@@ -238,7 +308,12 @@
       "desc": "Public day center for the senior population of Yarumal. Community presentation, DD and full CD set.",
       "desc_es": "Centro día público para la población mayor de Yarumal. Presentación comunitaria, DD y set completo de CD.",
       "cover": "centrodia_render.jpg",
-      "imgs": ["centrodia_render.jpg", "centrodia_cd3.jpg", "centrodia_cd2.jpg", "centrodia_cd1.jpg"]
+      "imgs": [
+        "centrodia_render.jpg",
+        "centrodia_cd3.jpg",
+        "centrodia_cd2.jpg",
+        "centrodia_cd1.jpg"
+      ]
     },
     {
       "id": "lima",
@@ -261,7 +336,10 @@
       "desc": "40-story housing tower proposal for an open international competition in the Barranco neighborhood — awarded an honorable mention.",
       "desc_es": "Propuesta de torre de vivienda de 40 pisos para un concurso internacional abierto en el barrio Barranco — mención honorífica.",
       "cover": "lima_interior.jpg",
-      "imgs": ["lima_tower.jpg", "lima_interior.jpg"]
+      "imgs": [
+        "lima_tower.jpg",
+        "lima_interior.jpg"
+      ]
     },
     {
       "id": "comfama",
@@ -284,7 +362,11 @@
       "desc": "Kindergarten proposal for a private design competition — awarded first place.",
       "desc_es": "Propuesta de jardín infantil para un concurso privado de diseño — primer puesto.",
       "cover": "comfama_2.jpg",
-      "imgs": ["comfama_2.jpg", "comfama_1.jpg", "comfama_3.jpg"]
+      "imgs": [
+        "comfama_2.jpg",
+        "comfama_1.jpg",
+        "comfama_3.jpg"
+      ]
     },
     {
       "id": "ucaribe",
@@ -307,7 +389,9 @@
       "desc": "Educational building proposal for a private design competition — awarded first place.",
       "desc_es": "Propuesta de edificio educativo para un concurso privado de diseño — primer puesto.",
       "cover": "ucaribe.jpg",
-      "imgs": ["ucaribe.jpg"]
+      "imgs": [
+        "ucaribe.jpg"
+      ]
     },
     {
       "id": "tierralinda",
@@ -330,11 +414,13 @@
       "desc": "Affordable housing development set against the mountains of the Aburrá Valley — 35 stories, 16 units per floor.",
       "desc_es": "Desarrollo de vivienda asequible frente a las montañas del Valle de Aburrá — 35 pisos, 16 unidades por planta.",
       "cover": "tierralinda.jpg",
-      "imgs": ["tierralinda.jpg"]
+      "imgs": [
+        "tierralinda.jpg"
+      ]
     },
     {
       "id": "pravia",
-      "hier": 3,
+      "hier": 4,
       "use": "residential",
       "title": "Pravia",
       "title_es": "Pravia",
@@ -353,7 +439,10 @@
       "desc": "High-end residential development where each house includes its own crop plot, letting families grow organic food on site.",
       "desc_es": "Desarrollo residencial de alta gama donde cada casa incluye su propia huerta, para que las familias cultiven su alimento orgánico.",
       "cover": "pravia_2.jpg",
-      "imgs": ["pravia_2.jpg", "pravia_1.jpg"]
+      "imgs": [
+        "pravia_2.jpg",
+        "pravia_1.jpg"
+      ]
     },
     {
       "id": "cerrito",
@@ -376,7 +465,10 @@
       "desc": "Single-family house pairing locally produced brick with wood raised on the same property; living areas open toward the mountain views.",
       "desc_es": "Vivienda unifamiliar que combina ladrillo de producción local con madera cultivada en el mismo predio; las zonas sociales se abren a las vistas de la montaña.",
       "cover": "cerrito_2.jpg",
-      "imgs": ["cerrito_2.jpg", "cerrito_1.jpg"]
+      "imgs": [
+        "cerrito_2.jpg",
+        "cerrito_1.jpg"
+      ]
     },
     {
       "id": "lamaria",
@@ -399,7 +491,9 @@
       "desc": "Conceptual design for a multi-purpose pavilion on a private mountain property — a venue for events from weddings of any faith to private gatherings.",
       "desc_es": "Diseño conceptual de un pabellón polivalente en un predio privado de montaña — un lugar para eventos, desde bodas de cualquier credo hasta reuniones privadas.",
       "cover": "lamaria.jpg",
-      "imgs": ["lamaria.jpg"]
+      "imgs": [
+        "lamaria.jpg"
+      ]
     },
     {
       "id": "vvc",
@@ -422,7 +516,10 @@
       "desc": "Hotel proposal for a private design competition — awarded second place. Updated visualization of the lobby and street presence.",
       "desc_es": "Propuesta de hotel para un concurso privado de diseño — segundo puesto. Visualización actualizada del lobby y su presencia urbana.",
       "cover": "vvc_2.jpg",
-      "imgs": ["vvc_2.jpg", "vvc_1.jpg"]
+      "imgs": [
+        "vvc_2.jpg",
+        "vvc_1.jpg"
+      ]
     }
   ]
 }
