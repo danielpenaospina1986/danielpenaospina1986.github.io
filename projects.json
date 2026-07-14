@@ -548,7 +548,7 @@
     {
       "id": "coordinadora_hub",
       "hier": 2,
-      "use": "civic",
+      "use": "industrial",
       "title": "Coordinadora HUB",
       "imgs": [
         "proyecto_coordinadora_cota_02.jpg",
