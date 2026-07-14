@@ -81,7 +81,7 @@ hr{border:none;border-top:1px solid rgba(255,255,255,.10);margin:18px 0}
 <!-- LOGIN -->
 <div class="card" id="loginCard">
   <h1>Panel de administración <small>· dapo.arq</small></h1>
-  <p class="muted" style="margin-top:6px">Acceso restringido. Ingresa la clave para administrar los proyectos del portafolio.</p>
+  <p class="muted" style="margin-top:6px">Acceso restringido.</p>
   <label for="pw">Clave</label>
   <input type="password" id="pw" autocomplete="current-password">
   <div style="margin-top:14px"><button class="btn btn-primary" id="loginBtn">Entrar</button> <a class="btn btn-ghost" href="index.html">← Volver al sitio</a></div>
@@ -136,10 +136,13 @@ hr{border:none;border-top:1px solid rgba(255,255,255,.10);margin:18px 0}
       <div><label>Nombre (inglés)</label><input type="text" id="f_title"></div>
       <div><label>Nombre (español — opcional)</label><input type="text" id="f_title_es"></div>
     </div>
-    <div class="row3">
+    <div class="row">
       <div><label>Uso</label><select id="f_use"></select></div>
       <div><label>Jerarquía (1 = primero)</label><select id="f_hier"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
-      <div><label>Badge / premio (opcional)</label><input type="text" id="f_badge" placeholder="1st place, dapo.arq…"></div>
+    </div>
+    <div class="row">
+      <div><label>Badge / premio (inglés — opcional)</label><input type="text" id="f_badge" placeholder="1st place, Honorable mention, dapo.arq…"></div>
+      <div><label>Badge / premio (español)</label><input type="text" id="f_badge_es" placeholder="1er puesto, Mención honorífica…"></div>
     </div>
     <div class="row">
       <div><label>Ubicación</label><input type="text" id="f_location" placeholder="Medellín, Colombia"></div>
@@ -271,7 +274,7 @@ function openEditor(p){
   DATA.uses.forEach(u=>{const o=document.createElement('option');o.value=u.id;o.textContent=u.es+' / '+u.en;useSel.appendChild(o);});
   useSel.value=p.use||DATA.uses[0].id;
   $('f_hier').value=String(p.hier||3);
-  ['title','title_es','badge','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{$('f_'+k).value=p[k]||'';});
+  ['title','title_es','badge','badge_es','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{$('f_'+k).value=p[k]||'';});
   renderImgs();
   $('listCard').classList.add('hidden');$('editCard').classList.remove('hidden');
   $('editStatus').textContent='';$('imgStatus').textContent='';
@@ -340,7 +343,7 @@ $('f_files').addEventListener('change',async e=>{
 
 /* guardar proyecto en memoria */
 $('saveBtn').addEventListener('click',()=>{
-  ['title','title_es','badge','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{cur[k]=$('f_'+k).value.trim();});
+  ['title','title_es','badge','badge_es','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{cur[k]=$('f_'+k).value.trim();});
   cur.use=$('f_use').value;
   cur.hier=parseInt($('f_hier').value,10)||3;
   if(!cur.title){setStatus('editStatus','El proyecto necesita al menos el nombre en inglés.',false);return;}
