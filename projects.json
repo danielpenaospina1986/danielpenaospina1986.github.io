@@ -73,7 +73,7 @@
     },
     {
       "id": "tulio",
-      "hier": 1,
+      "hier": 3,
       "use": "sports",
       "title": "Tulio Ospina Sports Complex",
       "title_es": "Complejo Deportivo Tulio Ospina",
@@ -317,7 +317,7 @@
     },
     {
       "id": "lima",
-      "hier": 3,
+      "hier": 2,
       "use": "residential",
       "title": "Lima Skyscraper",
       "title_es": "Rascacielos Lima",
@@ -335,7 +335,7 @@
       "team": "D. Peña + F. Téllez + R. Ortiz + S. Serna + J. Guisao",
       "desc": "40-story housing tower proposal for an open international competition in the Barranco neighborhood — awarded an honorable mention.",
       "desc_es": "Propuesta de torre de vivienda de 40 pisos para un concurso internacional abierto en el barrio Barranco — mención honorífica.",
-      "cover": "lima_interior.jpg",
+      "cover": "lima_tower.jpg",
       "imgs": [
         "lima_tower.jpg",
         "lima_interior.jpg"
@@ -497,7 +497,7 @@
     },
     {
       "id": "vvc",
-      "hier": 3,
+      "hier": 2,
       "use": "hospitality",
       "title": "VVC Hotel",
       "title_es": "Hotel VVC",
