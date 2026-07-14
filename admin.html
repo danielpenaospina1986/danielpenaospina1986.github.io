@@ -1,0 +1,386 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#141915">
+<meta name="robots" content="noindex,nofollow">
+<title>Admin — dapo.arq</title>
+<link rel="icon" type="image/png" href="logo_nav.png">
+<style>
+:root{
+  --ink:#E9E5D8; --ink-2:#C3BFAF; --ink-3:#93907F;
+  --link:#52C8A1; --jade:#3DBE95; --jade-deep:#2AA37B; --honey:#D8A55F;
+  --glass:rgba(22,27,24,.55); --stroke:rgba(255,255,255,.12);
+  --shadow:0 14px 38px rgba(0,0,0,.42), 0 2px 8px rgba(0,0,0,.3);
+  --r:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',-apple-system,'SF Pro Text','Helvetica Neue',sans-serif;color:var(--ink);line-height:1.5;font-size:15px;
+  background:
+    radial-gradient(110% 55% at 0% -5%, rgba(61,190,149,.13) 0%, rgba(61,190,149,0) 55%),
+    radial-gradient(90% 50% at 100% 6%, rgba(216,165,95,.10) 0%, rgba(216,165,95,0) 58%),
+    linear-gradient(175deg,#1A201C 0%, #141915 55%, #0F1411 100%);
+  background-attachment:fixed;min-height:100vh}
+a{color:var(--link);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:980px;margin:0 auto;padding:28px 16px 80px}
+.card{border-radius:var(--r);background:var(--glass);border:1px solid var(--stroke);box-shadow:var(--shadow);
+  backdrop-filter:blur(18px) saturate(140%);-webkit-backdrop-filter:blur(18px) saturate(140%);padding:26px 28px;margin-top:16px}
+h1{font-size:26px;letter-spacing:-.02em}
+h2{font-size:18px;margin-bottom:12px}
+h1 small{font-size:13px;color:var(--ink-3);font-weight:500}
+label{display:block;font-size:12px;font-weight:650;color:var(--ink-3);margin:12px 0 4px}
+input[type=text],input[type=password],select,textarea{width:100%;padding:9px 12px;border-radius:12px;border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);color:var(--ink);font:inherit;font-size:14px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--jade);outline-offset:1px}
+select option{background:#1A201C;color:var(--ink)}
+textarea{min-height:84px;resize:vertical}
+.btn{display:inline-block;padding:9px 18px;border-radius:999px;font-weight:600;font-size:13.5px;cursor:pointer;border:none;font-family:inherit;transition:transform .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-primary{color:#fff;background:var(--jade-deep)}
+.btn-primary:hover{background:var(--jade)}
+.btn-ghost{color:var(--link);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16)}
+.btn-danger{color:#F2B8AC;background:rgba(190,80,60,.18);border:1px solid rgba(190,80,60,.4)}
+.btn-sm{padding:5px 11px;font-size:12px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+.row3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:0 16px}
+.muted{color:var(--ink-3);font-size:12.5px}
+.status{margin-top:12px;font-size:13px;font-weight:600;white-space:pre-wrap}
+.status.ok{color:var(--jade)}
+.status.err{color:#F2A08F}
+.plist{display:flex;flex-direction:column;gap:10px;margin-top:14px}
+.pitem{display:flex;align-items:center;gap:14px;padding:10px 14px;border-radius:16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10)}
+.pitem img{width:72px;height:48px;object-fit:cover;border-radius:10px;flex:none;background:#0F1411}
+.pitem .nm{font-weight:650;font-size:14.5px}
+.pitem .mt{font-size:12px;color:var(--ink-3)}
+.pitem .sp{flex:1}
+.hierpill{font-size:11px;font-weight:700;color:var(--jade);border:1px solid rgba(61,190,149,.4);border-radius:999px;padding:2px 9px;flex:none}
+.imgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-top:10px}
+.imcell{border-radius:14px;overflow:hidden;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.10);padding:8px}
+.imcell img{width:100%;height:90px;object-fit:cover;border-radius:9px;background:#0F1411}
+.imcell.cover{border-color:var(--jade);box-shadow:0 0 0 1px var(--jade)}
+.imcell .nm{font-size:10.5px;color:var(--ink-3);margin:6px 0 6px;word-break:break-all}
+.imcell .acts{display:flex;flex-wrap:wrap;gap:4px}
+.imcell .acts button{font-size:11px;padding:3px 8px;border-radius:8px;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.06);color:var(--ink-2);cursor:pointer}
+.imcell .acts button:hover{background:rgba(255,255,255,.13)}
+.imcell .acts button.cov{color:var(--jade)}
+.topbar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.hidden{display:none!important}
+details{margin-top:10px;font-size:13px;color:var(--ink-2)}
+details summary{cursor:pointer;color:var(--link);font-weight:600}
+details ol{margin:8px 0 0 20px}
+details li{margin-top:4px}
+hr{border:none;border-top:1px solid rgba(255,255,255,.10);margin:18px 0}
+@media (max-width:700px){.row,.row3{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<!-- LOGIN -->
+<div class="card" id="loginCard">
+  <h1>Panel de administración <small>· dapo.arq</small></h1>
+  <p class="muted" style="margin-top:6px">Acceso restringido. Ingresa la clave para administrar los proyectos del portafolio.</p>
+  <label for="pw">Clave</label>
+  <input type="password" id="pw" autocomplete="current-password">
+  <div style="margin-top:14px"><button class="btn btn-primary" id="loginBtn">Entrar</button> <a class="btn btn-ghost" href="index.html">← Volver al sitio</a></div>
+  <div class="status" id="loginStatus"></div>
+</div>
+
+<!-- APP -->
+<div id="app" class="hidden">
+  <div class="card">
+    <div class="topbar">
+      <h1>Proyectos <small>· administración</small></h1>
+      <div>
+        <button class="btn btn-ghost btn-sm" id="dlBtn">Descargar JSON</button>
+        <button class="btn btn-ghost btn-sm" id="logoutBtn">Salir</button>
+      </div>
+    </div>
+    <label for="ghtoken">Token de GitHub (necesario para publicar cambios)</label>
+    <input type="password" id="ghtoken" placeholder="github_pat_...">
+    <details>
+      <summary>¿Cómo obtengo el token? (una sola vez)</summary>
+      <ol>
+        <li>Abre <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">github.com/settings/personal-access-tokens/new</a> (inicia sesión con tu cuenta).</li>
+        <li>Nombre: <b>portafolio-admin</b>. Expiración: la que prefieras (p. ej. 1 año).</li>
+        <li>En "Repository access" elige <b>Only select repositories</b> → <b>danielpenaospina1986.github.io</b>.</li>
+        <li>En "Permissions → Repository permissions" busca <b>Contents</b> y elige <b>Read and write</b>.</li>
+        <li>Genera el token, cópialo y pégalo aquí. Se guarda solo en esta sesión del navegador.</li>
+      </ol>
+    </details>
+    <div class="status" id="tokStatus"></div>
+  </div>
+
+  <!-- LISTA -->
+  <div class="card" id="listCard">
+    <div class="topbar">
+      <h2>Lista (orden de aparición: jerarquía 1 → 4)</h2>
+      <button class="btn btn-primary btn-sm" id="newBtn">+ Nuevo proyecto</button>
+    </div>
+    <div class="plist" id="plist"></div>
+    <hr>
+    <button class="btn btn-primary" id="publishBtn">Publicar cambios en el sitio</button>
+    <span class="muted"> &nbsp;GitHub Pages tarda 1–2 minutos en reflejar lo publicado.</span>
+    <div class="status" id="pubStatus"></div>
+  </div>
+
+  <!-- EDITOR -->
+  <div class="card hidden" id="editCard">
+    <div class="topbar">
+      <h2 id="editTitle">Editar proyecto</h2>
+      <button class="btn btn-ghost btn-sm" id="backBtn">← Volver a la lista</button>
+    </div>
+    <div class="row">
+      <div><label>Nombre (inglés)</label><input type="text" id="f_title"></div>
+      <div><label>Nombre (español — opcional)</label><input type="text" id="f_title_es"></div>
+    </div>
+    <div class="row3">
+      <div><label>Uso</label><select id="f_use"></select></div>
+      <div><label>Jerarquía (1 = primero)</label><select id="f_hier"><option>1</option><option>2</option><option>3</option><option>4</option></select></div>
+      <div><label>Badge / premio (opcional)</label><input type="text" id="f_badge" placeholder="1st place, dapo.arq…"></div>
+    </div>
+    <div class="row">
+      <div><label>Ubicación</label><input type="text" id="f_location" placeholder="Medellín, Colombia"></div>
+      <div><label>Ubicación (español — opcional)</label><input type="text" id="f_location_es"></div>
+    </div>
+    <div class="row">
+      <div><label>Etiqueta de uso personalizada (opcional, inglés)</label><input type="text" id="f_use_label" placeholder="p. ej. Residential tower"></div>
+      <div><label>Etiqueta de uso personalizada (español)</label><input type="text" id="f_use_label_es" placeholder="p. ej. Torre residencial"></div>
+    </div>
+    <div class="row">
+      <div><label>Rol / línea destacada (inglés)</label><input type="text" id="f_role" placeholder="Role: BIM Manager"></div>
+      <div><label>Rol / línea destacada (español)</label><input type="text" id="f_role_es" placeholder="Rol: BIM Manager"></div>
+    </div>
+    <div class="row3">
+      <div><label>Duración (inglés)</label><input type="text" id="f_duration" placeholder="2 years"></div>
+      <div><label>Duración (español)</label><input type="text" id="f_duration_es" placeholder="2 años"></div>
+      <div><label>Herramientas</label><input type="text" id="f_tools" placeholder="Revit · Lumion"></div>
+    </div>
+    <div><label>Equipo</label><input type="text" id="f_team" placeholder="A+U Arquitectos Urbanistas"></div>
+    <div><label>Descripción / comentario (inglés)</label><textarea id="f_desc"></textarea></div>
+    <div><label>Descripción / comentario (español)</label><textarea id="f_desc_es"></textarea></div>
+
+    <hr>
+    <h2>Imágenes del proyecto</h2>
+    <p class="muted">La marcada como <b style="color:var(--jade)">portada</b> aparece en la ficha. Usa ← → para ordenar. "Quitar" la saca del proyecto; "Borrar" también elimina el archivo del repositorio.</p>
+    <div class="imgrid" id="imgrid"></div>
+    <label style="margin-top:14px">Subir imágenes nuevas (se optimizan y publican en GitHub al instante — requiere token)</label>
+    <input type="file" id="f_files" multiple accept="image/*">
+    <div class="status" id="imgStatus"></div>
+
+    <hr>
+    <button class="btn btn-primary" id="saveBtn">Guardar proyecto (en memoria)</button>
+    <button class="btn btn-danger" id="delBtn">Eliminar proyecto</button>
+    <p class="muted" style="margin-top:10px">Después de guardar, usa <b>Publicar cambios en el sitio</b> en la lista para que quede en línea.</p>
+    <div class="status" id="editStatus"></div>
+  </div>
+</div>
+
+</div>
+<script>
+const PW_HASH='423cef072dc479069e405bb8ef945f1b38c3d854964295136b0a141c6fd8e4b7';
+const OWNER='danielpenaospina1986', REPO='danielpenaospina1986.github.io', BRANCH='main';
+const API='https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/';
+let DATA={uses:[],projects:[]};
+let cur=null;               // proyecto en edición
+const previews={};          // nombre -> objectURL de imágenes recién subidas
+const $=id=>document.getElementById(id);
+
+/* ---------- utilidades ---------- */
+async function sha256hex(s){
+  const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(s));
+  return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('');
+}
+function b64bytes(bytes){let bin='';for(let i=0;i<bytes.length;i+=0x8000){bin+=String.fromCharCode.apply(null,bytes.subarray(i,i+0x8000));}return btoa(bin);}
+const b64utf8=s=>b64bytes(new TextEncoder().encode(s));
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const slug=s=>String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9]+/g,'_').replace(/^_+|_+$/g,'')||'img';
+const token=()=>sessionStorage.getItem('dapo_ghtoken')||'';
+function ghHeaders(){return {'Authorization':'Bearer '+token(),'Accept':'application/vnd.github+json'};}
+function setStatus(id,msg,ok){const el=$(id);el.textContent=msg;el.className='status '+(ok?'ok':'err');}
+
+/* ---------- API GitHub ---------- */
+async function getSha(path){
+  const r=await fetch(API+encodeURIComponent(path)+'?ref='+BRANCH,{headers:ghHeaders(),cache:'no-store'});
+  if(r.status===404)return null;
+  if(!r.ok)throw new Error('GitHub GET '+path+' → '+r.status);
+  return (await r.json()).sha;
+}
+async function putFile(path,b64,msg){
+  const sha=await getSha(path);
+  const body={message:msg,content:b64,branch:BRANCH};if(sha)body.sha=sha;
+  const r=await fetch(API+encodeURIComponent(path),{method:'PUT',headers:ghHeaders(),body:JSON.stringify(body)});
+  if(!r.ok)throw new Error('GitHub PUT '+path+' → '+r.status+' '+(await r.text()).slice(0,200));
+}
+async function delFile(path,msg){
+  const sha=await getSha(path);
+  if(!sha)throw new Error('El archivo '+path+' no existe en el repositorio');
+  const r=await fetch(API+encodeURIComponent(path),{method:'DELETE',headers:ghHeaders(),body:JSON.stringify({message:msg,sha:sha,branch:BRANCH})});
+  if(!r.ok)throw new Error('GitHub DELETE '+path+' → '+r.status);
+}
+
+/* ---------- login ---------- */
+async function tryLogin(){
+  const h=await sha256hex($('pw').value);
+  if(h===PW_HASH){sessionStorage.setItem('dapo_adm','1');showApp();}
+  else setStatus('loginStatus','Clave incorrecta.',false);
+}
+$('loginBtn').addEventListener('click',tryLogin);
+$('pw').addEventListener('keydown',e=>{if(e.key==='Enter')tryLogin();});
+$('logoutBtn').addEventListener('click',()=>{sessionStorage.removeItem('dapo_adm');location.reload();});
+
+function showApp(){
+  $('loginCard').classList.add('hidden');$('app').classList.remove('hidden');
+  $('ghtoken').value=token();
+  loadData();
+}
+$('ghtoken').addEventListener('change',()=>{sessionStorage.setItem('dapo_ghtoken',$('ghtoken').value.trim());setStatus('tokStatus','Token guardado en esta sesión.',true);});
+
+/* ---------- datos ---------- */
+async function loadData(){
+  try{
+    const r=await fetch('projects.json?v='+Date.now(),{cache:'no-store'});
+    DATA=await r.json();
+    renderList();
+  }catch(e){setStatus('pubStatus','No pude cargar projects.json: '+e.message,false);}
+}
+const sorted=()=>[...DATA.projects].sort((a,b)=>(a.hier||3)-(b.hier||3));
+function useName(id){const u=DATA.uses.find(x=>x.id===id);return u?u.es:id;}
+function imgSrc(name){return previews[name]||name;}
+
+function renderList(){
+  const el=$('plist');el.innerHTML='';
+  sorted().forEach(p=>{
+    const d=document.createElement('div');d.className='pitem';
+    d.innerHTML='<img loading="lazy" src="'+esc(imgSrc(p.cover||(p.imgs&&p.imgs[0])||''))+'" alt="">'
+      +'<div><div class="nm">'+esc(p.title)+'</div><div class="mt">'+esc(useName(p.use))+' · '+esc(p.location||'')+' · '+(p.imgs?p.imgs.length:0)+' imágenes</div></div>'
+      +'<div class="sp"></div><span class="hierpill">Jerarquía '+(p.hier||3)+'</span>';
+    const b=document.createElement('button');b.className='btn btn-ghost btn-sm';b.textContent='Editar';
+    b.addEventListener('click',()=>openEditor(p));
+    d.appendChild(b);el.appendChild(d);
+  });
+}
+
+/* ---------- editor ---------- */
+function openEditor(p){
+  cur=p;
+  $('editTitle').textContent=p.title?('Editar: '+p.title):'Nuevo proyecto';
+  const useSel=$('f_use');useSel.innerHTML='';
+  DATA.uses.forEach(u=>{const o=document.createElement('option');o.value=u.id;o.textContent=u.es+' / '+u.en;useSel.appendChild(o);});
+  useSel.value=p.use||DATA.uses[0].id;
+  $('f_hier').value=String(p.hier||3);
+  ['title','title_es','badge','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{$('f_'+k).value=p[k]||'';});
+  renderImgs();
+  $('listCard').classList.add('hidden');$('editCard').classList.remove('hidden');
+  $('editStatus').textContent='';$('imgStatus').textContent='';
+  window.scrollTo({top:0});
+}
+$('backBtn').addEventListener('click',()=>{$('editCard').classList.add('hidden');$('listCard').classList.remove('hidden');renderList();});
+
+function renderImgs(){
+  const g=$('imgrid');g.innerHTML='';
+  (cur.imgs||[]).forEach((im,i)=>{
+    const c=document.createElement('div');c.className='imcell'+(cur.cover===im?' cover':'');
+    c.innerHTML='<img loading="lazy" src="'+esc(imgSrc(im))+'" alt=""><div class="nm">'+esc(im)+'</div>';
+    const acts=document.createElement('div');acts.className='acts';
+    const mk=(txt,cls,fn)=>{const b=document.createElement('button');b.textContent=txt;if(cls)b.className=cls;b.addEventListener('click',fn);acts.appendChild(b);};
+    mk('★ Portada',cur.cover===im?'cov':'',()=>{cur.cover=im;renderImgs();});
+    mk('←','',()=>{if(i>0){[cur.imgs[i-1],cur.imgs[i]]=[cur.imgs[i],cur.imgs[i-1]];renderImgs();}});
+    mk('→','',()=>{if(i<cur.imgs.length-1){[cur.imgs[i+1],cur.imgs[i]]=[cur.imgs[i],cur.imgs[i+1]];renderImgs();}});
+    mk('Quitar','',()=>{cur.imgs.splice(i,1);if(cur.cover===im)cur.cover=cur.imgs[0]||'';renderImgs();});
+    mk('Borrar del repo','',async()=>{
+      if(!confirm('¿Borrar '+im+' definitivamente del repositorio? Esta acción no se puede deshacer desde aquí.'))return;
+      if(!token()){setStatus('imgStatus','Necesitas guardar el token de GitHub primero.',false);return;}
+      try{await delFile(im,'Admin: borrar imagen '+im);cur.imgs.splice(i,1);if(cur.cover===im)cur.cover=cur.imgs[0]||'';renderImgs();setStatus('imgStatus','Imagen borrada del repositorio.',true);}
+      catch(e){setStatus('imgStatus','Error: '+e.message,false);}
+    });
+    c.appendChild(acts);g.appendChild(c);
+  });
+}
+
+/* subir imágenes: optimiza a JPG ≤1920px y publica vía API */
+function fileToJpeg(file,maxW,q){
+  return new Promise((res,rej)=>{
+    const img=new Image();
+    img.onload=()=>{
+      let w=img.width,h=img.height;
+      if(w>maxW){h=Math.round(h*maxW/w);w=maxW;}
+      const c=document.createElement('canvas');c.width=w;c.height=h;
+      const g=c.getContext('2d');g.fillStyle='#fff';g.fillRect(0,0,w,h);g.drawImage(img,0,0,w,h);
+      c.toBlob(b=>b?res(b):rej(new Error('No pude codificar la imagen')),'image/jpeg',q);
+    };
+    img.onerror=()=>rej(new Error('No pude leer la imagen'));
+    img.src=URL.createObjectURL(file);
+  });
+}
+$('f_files').addEventListener('change',async e=>{
+  const files=[...e.target.files];if(!files.length)return;
+  if(!token()){setStatus('imgStatus','Guarda primero el token de GitHub (arriba) para poder subir imágenes.',false);return;}
+  const base=slug(cur.id||cur.title||'proyecto');
+  for(let i=0;i<files.length;i++){
+    const f=files[i];
+    setStatus('imgStatus','Subiendo '+(i+1)+' de '+files.length+': '+f.name+'…',true);
+    try{
+      const blob=await fileToJpeg(f,1920,.85);
+      const name=base+'_'+slug(f.name.replace(/\.[^.]+$/,''))+'.jpg';
+      const bytes=new Uint8Array(await blob.arrayBuffer());
+      await putFile(name,b64bytes(bytes),'Admin: subir imagen '+name);
+      cur.imgs=cur.imgs||[];
+      if(!cur.imgs.includes(name))cur.imgs.push(name);
+      if(!cur.cover)cur.cover=name;
+      previews[name]=URL.createObjectURL(blob);
+      renderImgs();
+    }catch(err){setStatus('imgStatus','Error subiendo '+f.name+': '+err.message,false);return;}
+  }
+  setStatus('imgStatus','Listo: '+files.length+' imagen(es) subida(s) al repositorio. Recuerda Guardar y Publicar para que aparezcan en las fichas.',true);
+  e.target.value='';
+});
+
+/* guardar proyecto en memoria */
+$('saveBtn').addEventListener('click',()=>{
+  ['title','title_es','badge','location','location_es','use_label','use_label_es','role','role_es','duration','duration_es','tools','team','desc','desc_es'].forEach(k=>{cur[k]=$('f_'+k).value.trim();});
+  cur.use=$('f_use').value;
+  cur.hier=parseInt($('f_hier').value,10)||3;
+  if(!cur.title){setStatus('editStatus','El proyecto necesita al menos el nombre en inglés.',false);return;}
+  if(!cur.id)cur.id=slug(cur.title);
+  if(!DATA.projects.includes(cur))DATA.projects.push(cur);
+  setStatus('editStatus','Guardado en memoria. Ve a la lista y pulsa "Publicar cambios en el sitio".',true);
+  $('editTitle').textContent='Editar: '+cur.title;
+});
+
+/* eliminar proyecto */
+$('delBtn').addEventListener('click',()=>{
+  if(!DATA.projects.includes(cur)){$('editCard').classList.add('hidden');$('listCard').classList.remove('hidden');return;}
+  if(!confirm('¿Eliminar el proyecto "'+(cur.title||'sin nombre')+'" de la lista? Las imágenes seguirán en el repositorio.'))return;
+  DATA.projects=DATA.projects.filter(p=>p!==cur);
+  $('editCard').classList.add('hidden');$('listCard').classList.remove('hidden');
+  renderList();
+  setStatus('pubStatus','Proyecto eliminado de la lista. Pulsa "Publicar cambios" para hacerlo efectivo en el sitio.',true);
+});
+
+/* nuevo proyecto */
+$('newBtn').addEventListener('click',()=>{
+  openEditor({id:'',hier:3,use:DATA.uses[0].id,title:'',imgs:[],cover:''});
+});
+
+/* publicar projects.json */
+$('publishBtn').addEventListener('click',async()=>{
+  if(!token()){setStatus('pubStatus','Guarda primero el token de GitHub para poder publicar.',false);return;}
+  try{
+    setStatus('pubStatus','Publicando projects.json…',true);
+    await putFile('projects.json',b64utf8(JSON.stringify(DATA,null,2)),'Admin: actualizar proyectos');
+    setStatus('pubStatus','✔ Publicado. GitHub Pages lo reflejará en 1–2 minutos.',true);
+  }catch(e){setStatus('pubStatus','Error publicando: '+e.message,false);}
+});
+
+/* descargar JSON (respaldo / alternativa sin token) */
+$('dlBtn').addEventListener('click',()=>{
+  const blob=new Blob([JSON.stringify(DATA,null,2)],{type:'application/json'});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='projects.json';a.click();
+});
+
+if(sessionStorage.getItem('dapo_adm')==='1')showApp();
+</script>
+</body></html>

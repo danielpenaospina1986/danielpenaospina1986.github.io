@@ -134,8 +134,21 @@ main{padding-top:var(--nav-h)}
 .lb-imgs img{border-radius:16px;width:100%}
 .lb-close{position:sticky;top:0;float:right;cursor:pointer;font-size:14px;font-weight:600;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);border-radius:999px;padding:7px 16px;color:var(--ink)}
 .lb-facts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:16px}
+.chip{display:inline-flex;align-items:center;gap:7px}
+.chip svg{width:14px;height:14px;stroke:currentColor;fill:none;flex:none}
+.filters{display:flex;justify-content:center;flex-wrap:wrap;gap:16px;max-width:var(--max);margin:28px auto 0;padding:0 22px}
+.fbtn{display:flex;flex-direction:column;align-items:center;gap:7px;background:none;border:none;cursor:pointer;font:inherit;color:var(--ink-3);padding:0;transition:color .2s}
+.fbtn .ic{width:54px;height:54px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);transition:background .2s,transform .2s,border-color .2s}
+.fbtn svg{width:24px;height:24px;stroke:currentColor;fill:none}
+.fbtn:hover .ic{background:rgba(255,255,255,.12);transform:translateY(-2px)}
+.fbtn.active{color:var(--ink)}
+.fbtn.active .ic{background:var(--jade-deep);border-color:var(--jade);color:#fff;box-shadow:0 6px 18px rgba(42,163,123,.35)}
+.fbtn .lbl{font-size:11.5px;font-weight:600}
+.loadmore-wrap{text-align:center;margin-top:28px}
 @media (max-width:760px){
   .glinks a:not(.gcta):not(.glang){display:none}
+  .filters{gap:12px}
+  .fbtn .ic{width:48px;height:48px}
   .xp-grid{grid-template-columns:1fr}
   .duo{grid-template-columns:1fr}
   .duo .img{height:min(52vw,300px)}
@@ -163,7 +176,7 @@ main{padding-top:var(--nav-h)}
         <a class="applink" href="#projects">View projects</a>
         <a class="applink" href="Daniel_Pena_Ospina_CV.pdf" download>Download CV</a>
       </div>
-      <div class="chips"><span class="chip">📍 Medellín, Colombia</span><span class="chip">🌎 Remote — U.S. teams since 2023</span><span class="chip">🗣 Spanish · English</span></div>
+      <div class="chips"><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>Medellín, Colombia</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.6 2.7 4 6 4 9s-1.4 6.3-4 9c-2.6-2.7-4-6-4-9s1.4-6.3 4-9Z"/></svg>Remote — U.S. teams since 2023</span><span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.2 7.6L3 21l1.9-5.8A8.5 8.5 0 1 1 21 11.5Z"/></svg>Spanish · English</span></div>
     </div>
     <div class="hero-img"><img src="hero_santaelena.jpg" alt="Casa Santa Elena — dapo.arq"></div>
   </section>
@@ -176,8 +189,10 @@ main{padding-top:var(--nav-h)}
 <div class="sec-head" id="experience"><h2>Experience</h2><p>Ownership of drawings, models, standards and teams.</p></div>
 <div class="tile-wrap"><section class="tile"><div class="xp-grid"><div class="xp full"><h3>Architect · DOps Model Analyst</h3><div class="co">Tailorbird — U.S. multifamily renovation platform (remote)</div><div class="when">Feb 2023 – Present</div><p>Own interior modeling standards for large U.S. property portfolios; coordinate modeling, QA and quantification teams across three countries; refine templates and workflows to cut rework; build internal AI-assisted automation for QA and reporting.</p></div><div class="xp"><h3>BIM Manager</h3><div class="co">A+U Arquitectos Urbanistas</div><div class="when">Aug 2022 – Feb 2023</div><p>BIM coordination and modeling protocols for María Cano University, Centro Día Yarumal and the Tulio Ospina Sports Complex.</p></div><div class="xp"><h3>Director of Architecture</h3><div class="co">Inn Solutions SAS</div><div class="when">May – Aug 2022</div><p>Design, development and construction follow-up of Smart Fit gyms across five cities in Colombia and Panama.</p></div><div class="xp"><h3>Senior Architect</h3><div class="co">EDU — Empresa de Desarrollo Urbano</div><div class="when">May 2021 – May 2022</div><p>Public-sector urban development: Parques del Río Norte agreement, Medellín.</p></div><div class="xp"><h3>Senior Architect · BIM Developer</h3><div class="co">Convel S.A.S</div><div class="when">May 2018 – Sep 2020</div><p>DD and CD for HUB Coordinadora Cota (~807,000 SF logistics hub) and Altos de Solemio affordable housing.</p></div><div class="xp"><h3>Senior Architect</h3><div class="co">Condiseño — design consultant to Safdie Architects</div><div class="when">Oct 2015 – Mar 2017</div><p>Construction Documents for the Serena del Mar Hospital Center, Cartagena — Safdie Architects + Johns Hopkins Medicine International.</p></div><div class="xp"><h3>Earlier roles — Design Architect</h3><div class="co">Gómez Piedrahita · A+U · Coninsa Ramón H · Javier Vera · CAM Colombia · AIA</div><div class="when">2011 – 2017</div><p>Residential, commercial, industrial, cultural and transit projects across Colombia and Chile, with an FPAA-awarded practice among them.</p></div></div></section></div>
 <div class="sec-head" id="projects"><h2>Projects</h2><p>A selection across sectors and scales. Open any project to see drawings and renders.</p></div>
+<div class="filters" id="filters" role="toolbar" aria-label="Filter projects by use"></div>
 <div class="tile-wrap" id="projFeatured"></div>
 <div class="tile-wrap"><div class="duo" id="projDuo"></div></div>
+<div class="loadmore-wrap" id="moreWrap" style="display:none"><button class="btn btn-ghost" id="moreBtn">Load more projects</button></div>
 <div class="sec-head" id="skills"><h2>Skills & Education</h2></div>
 <div class="tile-wrap"><section class="tile"><div class="skill-grid"><div class="skill"><h3>BIM & Documentation</h3><div class="tags"><span class="tag hot">Revit — advanced · families</span><span class="tag hot">BIM standards & coordination</span><span class="tag">AutoCAD</span><span class="tag">Construction Documents</span><span class="tag">Design Development</span><span class="tag">AIA standards · imperial units</span><span class="tag">QA & takeoff workflows</span></div></div><div class="skill"><h3>Visualization</h3><div class="tags"><span class="tag">SketchUp + V-Ray</span><span class="tag">Twinmotion</span><span class="tag">Lumion</span><span class="tag">Illustrator · Photoshop · InDesign</span></div></div><div class="skill"><h3>Data & Automation</h3><div class="tags"><span class="tag hot">Python · data analysis</span><span class="tag hot">AI-assisted workflows</span><span class="tag">Process improvement</span></div></div><div class="skill"><h3>Education</h3><div class="tags"><span class="tag">B.Arch — U. Jorge Tadeo Lozano</span><span class="tag">Spec., Strategic Senior Management — Unisabaneta</span><span class="tag">Data, Analytics & AI — U. EAFIT (in progress)</span><span class="tag">The Architectural Imagination — HarvardX GSD</span></div></div></div></section></div>
 <div class="sec-head" id="contact"><h2>Let's build something.</h2></div>
@@ -195,39 +210,79 @@ main{padding-top:var(--nav-h)}
   <div>Project images credited to their respective teams and studios. Serena del Mar drawings © Safdie Architects, LLC. All rights reserved.</div>
   <div class="legal">
     <span>© 2026 Daniel Peña Ospina · Medellín, Colombia.</span>
-    <span><a href="mailto:danielpenaospina@gmail.com">danielpenaospina@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.instagram.com/dapo.arq" target="_blank" rel="noopener">@dapo.arq</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/danielpenaospina" target="_blank" rel="noopener">LinkedIn</a></span>
+    <span><a href="mailto:danielpenaospina@gmail.com">danielpenaospina@gmail.com</a> &nbsp;|&nbsp; <a href="https://www.instagram.com/dapo.arq" target="_blank" rel="noopener">@dapo.arq</a> &nbsp;|&nbsp; <a href="https://www.linkedin.com/in/danielpenaospina" target="_blank" rel="noopener">LinkedIn</a> &nbsp;|&nbsp; <a href="admin.html">admin</a></span>
   </div>
 </div></footer>
 <div class="lb" id="lb" role="dialog" aria-modal="true"><div class="lb-card" id="lbCard"></div></div>
 <script>
-const projects = [{"id": "chsdm", "featured": true, "cover": "chsdm_facade", "imgs": ["chsdm_facade", "chsdm_exterior", "chsdm_lobby", "chsdm_renders", "chsdm_drawings"], "badge": "Safdie Architects + Johns Hopkins", "title": "Serena del Mar Hospital Center", "sub": "Healthcare · Cartagena, Colombia", "desc": "Hospital designed by Safdie Architects and advised by Johns Hopkins Medicine International. Part of the team responsible for the full Construction Documents set, coordinating with structural and MEP disciplines.", "facts": ["Role: Senior Architect — CD team", "Duration: 2 years", "Revit · AutoCAD · SketchUp", "Team: Condiseño (Safdie Architects)"]}, {"id": "tulio", "featured": true, "cover": "tulio_exterior", "imgs": ["tulio_exterior", "tulio_interior", "tulio_cd2", "tulio_cd1"], "badge": "BIM Manager", "title": "Tulio Ospina Sports Complex", "sub": "Sports · Bello, Antioquia", "desc": "New stadium for the wrestling league and an aquatics stadium within a multi-sport complex. Led BIM coordination and CD production.", "facts": ["Role: BIM Manager", "Duration: 1.5 years", "Revit · Twinmotion", "Team: A+U Arquitectos Urbanistas"]}, {"id": "santaelena", "featured": false, "cover": "santaelena_1", "imgs": ["santaelena_1", "santaelena_2"], "badge": "dapo.arq", "title": "Santa Elena House", "sub": "Residential · Santa Elena, Antioquia", "desc": "Single-family house in the misty hills of Santa Elena. Design and visualization developed as independent practice under dapo.arq.", "facts": ["Design + Visualization", "Independent practice — dapo.arq", "Team: Daniel Peña Ospina"]}, {"id": "llanogrande", "featured": false, "cover": "llanogrande_1", "imgs": ["llanogrande_1", "llanogrande_2"], "badge": "dapo.arq", "title": "Llanogrande House", "sub": "Residential · Llanogrande, Antioquia", "desc": "Country house in Llanogrande. Design and visualization developed as independent practice under dapo.arq.", "facts": ["Design + Visualization", "Independent practice — dapo.arq", "Team: Daniel Peña Ospina"]}, {"id": "orlando", "featured": false, "cover": "orlando_1", "imgs": ["orlando_1", "orlando_2"], "badge": "dapo.arq", "title": "Orlando Apartment Interiors", "sub": "Interior design · Orlando, FL, USA", "desc": "Interior design and visualization for a residential apartment in Orlando, Florida — independent practice under dapo.arq.", "facts": ["Interior design + Visualization", "Independent practice — dapo.arq", "Team: Daniel Peña Ospina"]}, {"id": "centrodia", "featured": false, "cover": "centrodia_render", "imgs": ["centrodia_render", "centrodia_cd3", "centrodia_cd2", "centrodia_cd1"], "badge": null, "title": "Centro Día Yarumal", "sub": "Civic · Yarumal, Antioquia", "desc": "Public day center for the senior population of Yarumal. Community presentation, DD and full CD set.", "facts": ["Role: BIM Manager", "Duration: 1 year", "Revit · Lumion · Photoshop", "Team: A+U Arquitectos Urbanistas"]}, {"id": "lima", "featured": false, "cover": "lima_interior", "imgs": ["lima_tower", "lima_interior"], "badge": "Honorable mention", "title": "Lima Skyscraper", "sub": "Residential tower · Lima, Perú", "desc": "40-story housing tower proposal for an open international competition in the Barranco neighborhood — awarded an honorable mention.", "facts": ["International competition — honorable mention", "Duration: 3 months", "Revit · Lumion · Photoshop", "Team: D. Peña + F. Téllez + R. Ortiz + S. Serna + J. Guisao"]}, {"id": "comfama", "featured": false, "cover": "comfama_2", "imgs": ["comfama_2", "comfama_1", "comfama_3"], "badge": "1st place", "title": "Comfama Kindergarten", "sub": "Educational · La Estrella, Antioquia", "desc": "Kindergarten proposal for a private design competition — awarded first place.", "facts": ["Private competition — 1st place", "Duration: 2 months", "SketchUp + V-Ray + Photoshop", "Team: A+U Arquitectos Urbanistas"]}, {"id": "ucaribe", "featured": false, "cover": "ucaribe", "imgs": ["ucaribe"], "badge": "1st place", "title": "Universidad del Caribe", "sub": "Educational · Barranquilla, Colombia", "desc": "Educational building proposal for a private design competition — awarded first place.", "facts": ["Private competition — 1st place", "Duration: 3 months", "SketchUp + V-Ray + Photoshop", "Team: A+U Arquitectos Urbanistas"]}, {"id": "tierralinda", "featured": false, "cover": "tierralinda", "imgs": ["tierralinda"], "badge": null, "title": "Tierra Linda", "sub": "Affordable housing · Medellín, Colombia", "desc": "Affordable housing development set against the mountains of the Aburrá Valley — 35 stories, 16 units per floor.", "facts": ["Duration: 2 years", "SketchUp + Lumion", "Team: A+U Arquitectos Urbanistas"]}, {"id": "pravia", "featured": false, "cover": "pravia_2", "imgs": ["pravia_2", "pravia_1"], "badge": null, "title": "Pravia", "sub": "Residential · Medellín suburbs", "desc": "High-end residential development where each house includes its own crop plot, letting families grow organic food on site.", "facts": ["Duration: 2 weeks", "Revit · Lumion · Photoshop", "Team: A+U Arquitectos Urbanistas"]}, {"id": "cerrito", "featured": false, "cover": "cerrito_2", "imgs": ["cerrito_2", "cerrito_1"], "badge": null, "title": "Cerrito", "sub": "Single-family house · Pereira, Colombia", "desc": "Single-family house pairing locally produced brick with wood raised on the same property; living areas open toward the mountain views.", "facts": ["Duration: 1 year", "Revit · Twinmotion", "Team: Daniel Peña Ospina"]}, {"id": "lamaria", "featured": false, "cover": "lamaria", "imgs": ["lamaria"], "badge": null, "title": "La María", "sub": "Event pavilion · Bogotá, Colombia", "desc": "Conceptual design for a multi-purpose pavilion on a private mountain property — a venue for events from weddings of any faith to private gatherings.", "facts": ["Duration: 3 months", "SketchUp + V-Ray + Photoshop", "Team: Daniel Peña Ospina"]}, {"id": "vvc", "featured": false, "cover": "vvc_2", "imgs": ["vvc_2", "vvc_1"], "badge": "2nd place", "title": "VVC Hotel", "sub": "Hospitality · Villavicencio, Colombia", "desc": "Hotel proposal for a private design competition — awarded second place. Updated visualization of the lobby and street presence.", "facts": ["Private competition — 2nd place", "Duration: 4 months", "Team: Daniel Peña Ospina"]}];
-const VIEW_LABEL = "View drawings & renders";
-const CLOSE_LABEL = "✕ Close";
+const LANG='en';const VIEW_LABEL="View drawings & renders";const CLOSE_LABEL="✕ Close";const ALL_LABEL="All";const DUR_LABEL="Duration: ";const TEAM_LABEL="Team: ";
+const PAGE=10;
+const ICONS={
+all:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>',
+residential:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10.5 12 3l9 7.5"/><path d="M5 9v12h14V9"/><path d="M9.5 21v-6h5v6"/></svg>',
+healthcare:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg>',
+educational:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m2 9.5 10-5 10 5-10 5-10-5Z"/><path d="M6.5 12v4.2c0 1.2 2.5 2.3 5.5 2.3s5.5-1.1 5.5-2.3V12"/><path d="M22 9.5V15"/></svg>',
+sports:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 4h10v5a5 5 0 0 1-10 0V4Z"/><path d="M7 6H4v1a4 4 0 0 0 3.2 3.9M17 6h3v1a4 4 0 0 1-3.2 3.9"/><path d="M12 14v4M8.5 21h7"/></svg>',
+civic:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-6 9 6"/><path d="M4 9h16"/><path d="M6 12v6M10 12v6M14 12v6M18 12v6"/><path d="M3 21h18"/></svg>',
+commercial:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 7h12l1.3 13H4.7L6 7Z"/><path d="M9 10V6a3 3 0 0 1 6 0v4"/></svg>',
+hospitality:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16"/><path d="M2 8h18a2 2 0 0 1 2 2v10"/><path d="M2 17h20"/><path d="M6 8v9"/></svg>',
+interiors:'<svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M19 9V6a2 2 0 0 0-2-2H7a2 2 0 0 0-2 2v3"/><path d="M3 16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5a2 2 0 0 0-4 0v2H7v-2a2 2 0 0 0-4 0v5Z"/><path d="M5 18v2M19 18v2"/></svg>'
+};
+let DATA={uses:[],projects:[]},activeUse=null,shown=PAGE;
+const fWrap=document.getElementById('projFeatured'),duo=document.getElementById('projDuo');
+const filtersEl=document.getElementById('filters'),moreWrap=document.getElementById('moreWrap'),moreBtn=document.getElementById('moreBtn');
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const T=(o,k)=>(LANG==='es'&&o[k+'_es'])?o[k+'_es']:(o[k]||'');
+const useLabel=id=>{const u=DATA.uses.find(x=>x.id===id);return u?(LANG==='es'?u.es:u.en):(id||'')};
+const subOf=p=>{const l=T(p,'use_label')||useLabel(p.use);const loc=T(p,'location');return loc?(l?l+' · '+loc:loc):l};
+const factsOf=p=>{const f=[];const r=T(p,'role');if(r)f.push(r);const d=T(p,'duration');if(d)f.push(DUR_LABEL+d);if(p.tools)f.push(p.tools);const t=T(p,'team');if(t)f.push(TEAM_LABEL+t);return f};
+const sorted=()=>[...DATA.projects].sort((a,b)=>(a.hier||3)-(b.hier||3));
 function tileHTML(p){
-  return `<div class="txt">${p.badge?`<div class="badge">${p.badge}</div>`:''}
-    <h3>${p.title}</h3><div class="sub">${p.sub}</div>
+  const badge=T(p,'badge');
+  return `<div class="txt">${badge?`<div class="badge">${esc(badge)}</div>`:''}
+    <h3>${esc(T(p,'title'))}</h3><div class="sub">${esc(subOf(p))}</div>
     <div class="links-row"><span class="applink">${VIEW_LABEL}</span></div></div>
-    <div class="img"><img loading="lazy" src="${p.cover}.jpg" alt="${p.title}"></div>`;
+    <div class="img"><img loading="lazy" src="${esc(p.cover||(p.imgs&&p.imgs[0])||'')}" alt="${esc(T(p,'title'))}"></div>`;
 }
-const fWrap=document.getElementById('projFeatured'), duo=document.getElementById('projDuo');
-projects.forEach(p=>{
-  const b=document.createElement('button');
-  b.className='tile proj-tile t-center'+(p.featured?' featured':'');
-  b.setAttribute('aria-haspopup','dialog');
-  b.innerHTML=tileHTML(p);
-  b.addEventListener('click',()=>openLB(p));
-  (p.featured?fWrap:duo).appendChild(b);
-});
-const lb=document.getElementById('lb'), lbCard=document.getElementById('lbCard');
+function buildFilters(){
+  const used=new Set(DATA.projects.map(p=>p.use));
+  const defs=[{id:null,label:ALL_LABEL,icon:'all'}].concat(DATA.uses.filter(u=>used.has(u.id)).map(u=>({id:u.id,label:LANG==='es'?u.es:u.en,icon:u.id})));
+  filtersEl.innerHTML='';
+  defs.forEach(d=>{
+    const b=document.createElement('button');
+    b.className='fbtn'+(activeUse===d.id?' active':'');
+    b.setAttribute('aria-pressed',String(activeUse===d.id));
+    b.innerHTML=`<span class="ic">${ICONS[d.icon]||ICONS.all}</span><span class="lbl">${esc(d.label)}</span>`;
+    b.addEventListener('click',()=>{activeUse=d.id;shown=PAGE;buildFilters();render();});
+    filtersEl.appendChild(b);
+  });
+}
+function render(){
+  const list=sorted().filter(p=>!activeUse||p.use===activeUse);
+  const vis=list.slice(0,shown);
+  fWrap.innerHTML='';duo.innerHTML='';
+  vis.forEach((p,i)=>{
+    const b=document.createElement('button');
+    b.className='tile proj-tile t-center'+(i<2?' featured':'');
+    b.setAttribute('aria-haspopup','dialog');
+    b.innerHTML=tileHTML(p);
+    b.addEventListener('click',()=>openLB(p));
+    (i<2?fWrap:duo).appendChild(b);
+  });
+  moreWrap.style.display=list.length>shown?'':'none';
+}
+moreBtn.addEventListener('click',()=>{shown+=PAGE;render();});
+const lb=document.getElementById('lb'),lbCard=document.getElementById('lbCard');
 function openLB(p){
   lbCard.innerHTML=`<button class="lb-close" onclick="closeLB()">${CLOSE_LABEL}</button>
-    <h3>${p.title}</h3><div class="sub">${p.sub}</div><p>${p.desc}</p>
-    <div class="lb-facts">${p.facts.map(f=>`<span class="tag">${f}</span>`).join('')}</div>
-    <div class="lb-imgs">${p.imgs.map(im=>`<img loading="lazy" src="${im}.jpg" alt="${p.title}">`).join('')}</div>`;
-  lb.classList.add('open'); document.body.style.overflow='hidden'; lbCard.scrollTop=0;
+    <h3>${esc(T(p,'title'))}</h3><div class="sub">${esc(subOf(p))}</div><p>${esc(T(p,'desc'))}</p>
+    <div class="lb-facts">${factsOf(p).map(f=>`<span class="tag">${esc(f)}</span>`).join('')}</div>
+    <div class="lb-imgs">${(p.imgs||[]).map(im=>`<img loading="lazy" src="${esc(im)}" alt="${esc(T(p,'title'))}">`).join('')}</div>`;
+  lb.classList.add('open');document.body.style.overflow='hidden';lbCard.scrollTop=0;
 }
-function closeLB(){ lb.classList.remove('open'); document.body.style.overflow=''; }
-lb.addEventListener('click',e=>{ if(e.target===lb) closeLB(); });
-document.addEventListener('keydown',e=>{ if(e.key==='Escape') closeLB(); });
+function closeLB(){lb.classList.remove('open');document.body.style.overflow='';}
+lb.addEventListener('click',e=>{if(e.target===lb)closeLB();});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeLB();});
+fetch('projects.json?v='+Date.now()).then(r=>r.json()).then(j=>{DATA=j;buildFilters();render();}).catch(err=>{console.error('projects.json load failed',err);});
 </script>
 </body></html>
