@@ -120,7 +120,7 @@
     },
     {
       "id": "estadio",
-      "hier": 3,
+      "hier": 5,
       "use": "sports",
       "title": "Atlético Nacional Stadium",
       "title_es": "Estadio Atlético Nacional",
@@ -282,7 +282,7 @@
     },
     {
       "id": "orlando",
-      "hier": 4,
+      "hier": 5,
       "use": "interiors",
       "title": "Orlando Apartment Interiors",
       "title_es": "Interiorismo Apartamento Orlando",
