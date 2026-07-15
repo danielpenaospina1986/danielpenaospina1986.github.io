@@ -826,10 +826,10 @@
       "location": "Medellín, Colombia",
       "desc": "Large mixed-use development promoted with Diego Gil and Gensler for a private client — residential towers over a commercial podium. The work covered the project's economic structuring, phase-0 budget and concept design, shown through working model views.",
       "desc_es": "Gran desarrollo de uso mixto promovido junto a Diego Gil y Gensler para un cliente privado — torres residenciales sobre plataforma comercial. El trabajo cubrió la estructuración económica, el presupuesto fase 0 y el diseño conceptual, mostrado en vistas del modelo de trabajo.",
-      "cover": "guayabal_1.jpg",
+      "cover": "guayabal_picture3.jpg",
       "imgs": [
-        "guayabal_1.jpg",
-        "guayabal_2.jpg"
+        "guayabal_picture3.jpg",
+        "guayabal_picture4.jpg"
       ]
     },
     {
@@ -879,12 +879,14 @@
       "location": "Santa Marta, Colombia",
       "desc": "Shopping mall with a tensile-roofed food court and tree-filled circulation atriums — renders and technical sections of both phases.",
       "desc_es": "Centro comercial con plazoleta de comidas bajo cubierta tensada y atrios de circulación arborizados — renders y cortes técnicos de ambas etapas.",
-      "cover": "tayrona_2.jpg",
+      "cover": "tayrona_picture1.jpg",
       "imgs": [
+        "tayrona_picture1.jpg",
+        "tayrona_picture2.jpg",
         "tayrona_2.jpg",
-        "tayrona_1.jpg",
         "tayrona_3.jpg",
-        "tayrona_4.jpg"
+        "tayrona_4.jpg",
+        "tayrona_1.jpg"
       ]
     },
     {
