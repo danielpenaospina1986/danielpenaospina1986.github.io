@@ -188,6 +188,7 @@ const OWNER='danielpenaospina1986', REPO='danielpenaospina1986.github.io', BRANC
 const API='https://api.github.com/repos/'+OWNER+'/'+REPO+'/contents/';
 let DATA={uses:[],projects:[]};
 let cur=null;               // proyecto en edición
+let baseProj=new Set(),baseUses=new Set();   // ids existentes al cargar (para fusionar al publicar)
 const previews={};          // nombre -> objectURL de imágenes recién subidas
 const $=id=>document.getElementById(id);
 
@@ -246,6 +247,8 @@ async function loadData(){
   try{
     const r=await fetch('projects.json?v='+Date.now(),{cache:'no-store'});
     DATA=await r.json();
+    baseProj=new Set(DATA.projects.map(p=>p.id));
+    baseUses=new Set(DATA.uses.map(u=>u.id));
     renderList();
   }catch(e){setStatus('pubStatus','No pude cargar projects.json: '+e.message,false);}
 }
@@ -373,7 +376,20 @@ $('publishBtn').addEventListener('click',async()=>{
   if(!token()){setStatus('pubStatus','Guarda primero el token de GitHub para poder publicar.',false);return;}
   try{
     setStatus('pubStatus','Publicando projects.json…',true);
+    /* fusionar usos/proyectos creados por otras sesiones desde que cargamos, para no borrarlos */
+    try{
+      const r=await fetch(API+encodeURIComponent('projects.json')+'?ref='+BRANCH,{headers:ghHeaders(),cache:'no-store'});
+      if(r.ok){
+        const j=await r.json();
+        const remote=JSON.parse(new TextDecoder().decode(Uint8Array.from(atob(j.content.replace(/\n/g,'')),c=>c.charCodeAt(0))));
+        (remote.uses||[]).forEach(u=>{if(!baseUses.has(u.id)&&!DATA.uses.some(x=>x.id===u.id))DATA.uses.push(u);});
+        (remote.projects||[]).forEach(p=>{if(!baseProj.has(p.id)&&!DATA.projects.some(x=>x.id===p.id))DATA.projects.push(p);});
+      }
+    }catch(e){/* si falla la fusión, publicamos igual */}
     await putFile('projects.json',b64utf8(JSON.stringify(DATA,null,2)),'Admin: actualizar proyectos');
+    baseProj=new Set(DATA.projects.map(p=>p.id));
+    baseUses=new Set(DATA.uses.map(u=>u.id));
+    renderList();
     setStatus('pubStatus','✔ Publicado. GitHub Pages lo reflejará en 1–2 minutos.',true);
   }catch(e){setStatus('pubStatus','Error publicando: '+e.message,false);}
 });

@@ -54,6 +54,11 @@
       "id": "masterplan",
       "en": "Master Plan",
       "es": "Master Plan"
+    },
+    {
+      "id": "mixeduse",
+      "en": "Mixed Use",
+      "es": "Uso Mixto"
     }
   ],
   "projects": [
@@ -437,7 +442,8 @@
       "desc_es": "Desarrollo de vivienda asequible frente a las montañas del Valle de Aburrá — 35 pisos, 16 unidades por planta.",
       "cover": "tierralinda.jpg",
       "imgs": [
-        "tierralinda.jpg"
+        "tierralinda.jpg",
+        "tierralinda_2.jpg"
       ]
     },
     {
@@ -517,7 +523,9 @@
       "desc_es": "Diseño conceptual de un pabellón polivalente en un predio privado de montaña — un lugar para eventos, desde bodas de cualquier credo hasta reuniones privadas.",
       "cover": "lamaria.jpg",
       "imgs": [
-        "lamaria.jpg"
+        "lamaria.jpg",
+        "lamaria_2.jpg",
+        "lamaria_3.jpg"
       ]
     },
     {
@@ -543,7 +551,8 @@
       "cover": "vvc_2.jpg",
       "imgs": [
         "vvc_2.jpg",
-        "vvc_1.jpg"
+        "vvc_1.jpg",
+        "vvc_3.jpg"
       ]
     },
     {
@@ -686,6 +695,269 @@
         "swiss_4.jpg",
         "swiss_5.jpg",
         "swiss_6.jpg"
+      ]
+    },
+    {
+      "id": "solemio",
+      "hier": 3,
+      "use": "residential",
+      "title": "Altos de Solemio",
+      "title_es": "Altos de Solemio",
+      "use_label": "Affordable housing",
+      "use_label_es": "Vivienda VIS",
+      "location": "Colombia",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Role: Senior Architect · BIM Developer",
+      "role_es": "Rol: Arquitecto Senior · Desarrollador BIM",
+      "duration": "",
+      "duration_es": "",
+      "tools": "Revit",
+      "team": "Convel S.A.S",
+      "desc": "Affordable housing development built around shared amenities — a lap pool, sports court and social buildings between the towers. Shown as built, from the air to the unit interiors.",
+      "desc_es": "Desarrollo de vivienda asequible organizado alrededor de amenidades compartidas — piscina, cancha y edificios sociales entre las torres. Mostrado construido, desde el aire hasta el interior de las unidades.",
+      "cover": "solemio_1.jpg",
+      "imgs": [
+        "solemio_1.jpg",
+        "solemio_2.jpg",
+        "solemio_3.jpg",
+        "solemio_4.jpg",
+        "solemio_5.jpg"
+      ]
+    },
+    {
+      "id": "comodisimos",
+      "hier": 3,
+      "use": "industrial",
+      "title": "Comodísimos Plant",
+      "title_es": "Planta Comodísimos",
+      "use_label": "",
+      "use_label_es": "",
+      "location": "Colombia",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "desc": "Industrial facility for mattress maker Comodísimos — a folded dark-metal envelope that reorganizes the street front and loading bays of the plant. Street captures of the built result.",
+      "desc_es": "Instalación industrial para Comodísimos — una envolvente metálica oscura plegada que reorganiza el frente urbano y los muelles de carga de la planta. Capturas de calle del resultado construido.",
+      "cover": "comodisimos_1.jpg",
+      "imgs": [
+        "comodisimos_1.jpg",
+        "comodisimos_2.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "acuarela",
+      "use": "residential",
+      "title": "Casa La Acuarela",
+      "title_es": "Casa La Acuarela",
+      "location": "Colombia",
+      "desc": "Single-family house — interior visualizations of the double-height social areas and open kitchen.",
+      "desc_es": "Vivienda unifamiliar — visualizaciones interiores de las zonas sociales de doble altura y la cocina abierta.",
+      "cover": "acuarela_1.jpg",
+      "imgs": [
+        "acuarela_1.jpg",
+        "acuarela_2.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "joaquina",
+      "use": "residential",
+      "title": "La Joaquina",
+      "title_es": "La Joaquina",
+      "location": "Colombia",
+      "desc": "Stone-clad townhouse development — street front and loft-type unit interiors.",
+      "desc_es": "Conjunto de casas revestidas en piedra — frente urbano e interiores de unidades tipo loft.",
+      "cover": "joaquina_1.jpg",
+      "imgs": [
+        "joaquina_1.jpg",
+        "joaquina_2.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "guayabal",
+      "use": "mixeduse",
+      "title": "Guayabal",
+      "title_es": "Guayabal",
+      "location": "Medellín, Colombia",
+      "desc": "Mixed-use development in Guayabal — residential towers over a commercial podium, shown through working model views.",
+      "desc_es": "Desarrollo de uso mixto en Guayabal — torres residenciales sobre plataforma comercial, mostrado en vistas del modelo de trabajo.",
+      "cover": "guayabal_1.jpg",
+      "imgs": [
+        "guayabal_1.jpg",
+        "guayabal_2.jpg"
+      ]
+    },
+    {
+      "use_label": "Institutional",
+      "use_label_es": "Institucional",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "arquidiocesis",
+      "use": "civic",
+      "title": "Archdiocese of Medellín",
+      "title_es": "Arquidiócesis de Medellín",
+      "location": "Medellín, Colombia",
+      "desc": "Headquarters building for the Archdiocese of Medellín — Curia offices behind a veiled screen façade marked by the chapel cross.",
+      "desc_es": "Edificio sede para la Arquidiócesis de Medellín — despachos de la Curia tras una fachada velada de pantallas, marcada por la cruz de la capilla.",
+      "cover": "arquidiocesis_1.jpg",
+      "imgs": [
+        "arquidiocesis_1.jpg",
+        "arquidiocesis_2.jpg",
+        "arquidiocesis_3.jpg"
+      ]
+    },
+    {
+      "use_label": "Shopping mall",
+      "use_label_es": "Centro Comercial",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "Coninsa Ramón H. + Espinosa Arquitectos",
+      "hier": 3,
+      "id": "tayrona",
+      "use": "commercial",
+      "title": "Tayrona Shopping Mall",
+      "title_es": "Tayrona Centro Comercial",
+      "location": "Santa Marta, Colombia",
+      "desc": "Shopping mall with a tensile-roofed food court and tree-filled circulation atriums — renders and technical sections of both phases.",
+      "desc_es": "Centro comercial con plazoleta de comidas bajo cubierta tensada y atrios de circulación arborizados — renders y cortes técnicos de ambas etapas.",
+      "cover": "tayrona_1.jpg",
+      "imgs": [
+        "tayrona_1.jpg",
+        "tayrona_2.jpg",
+        "tayrona_3.jpg",
+        "tayrona_4.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "c2laureles",
+      "use": "residential",
+      "title": "C2 Laureles",
+      "title_es": "C2 Laureles",
+      "location": "Medellín, Colombia",
+      "desc": "Infill apartment building in the Laureles neighborhood — a compact brick-and-concrete volume with planted balconies.",
+      "desc_es": "Edificio de apartamentos de relleno urbano en Laureles — un volumen compacto de ladrillo y concreto con balcones sembrados.",
+      "cover": "c2laureles_1.jpg",
+      "imgs": [
+        "c2laureles_1.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "vegasdelrio",
+      "use": "residential",
+      "title": "Vegas del Río",
+      "title_es": "Vegas del Río",
+      "location": "Medellín, Colombia",
+      "desc": "Residential tower with a commercial ground floor facing the river corridor.",
+      "desc_es": "Torre residencial con primer piso comercial frente al corredor del río.",
+      "cover": "vegasdelrio_1.jpg",
+      "imgs": [
+        "vegasdelrio_1.jpg"
+      ]
+    },
+    {
+      "use_label": "",
+      "use_label_es": "",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "hier": 3,
+      "id": "cochabamba",
+      "use": "masterplan",
+      "title": "Cochabamba Master Plan",
+      "title_es": "Master Plan Cochabamba",
+      "location": "Cochabamba, Bolivia",
+      "desc": "Hillside master plan combining housing blocks, a stadium, sports facilities and public buildings on a plateau above the valley.",
+      "desc_es": "Master plan en ladera que combina bloques de vivienda, un estadio, equipamientos deportivos y edificios públicos sobre una meseta del valle.",
+      "cover": "cochabamba_1.jpg",
+      "imgs": [
+        "cochabamba_1.jpg"
       ]
     }
   ]
