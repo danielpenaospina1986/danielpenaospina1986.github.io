@@ -209,7 +209,7 @@
     {
       "id": "3co",
       "hier": 3,
-      "use": "commercial",
+      "use": "mixeduse",
       "title": "3CO Park",
       "title_es": "3CO Park",
       "use_label": "Offices",
@@ -228,10 +228,10 @@
       "desc_es": "Propuesta de edificio de oficinas con primer piso comercial y terrazas ajardinadas excavadas en un volumen de madera y vidrio.",
       "cover": "3co_3.jpg",
       "imgs": [
-        "3co_1.jpg",
         "3co_3.jpg",
         "3co_1579385255107.jpg",
         "3co_4.jpg",
+        "3co_1.jpg",
         "3co_2.jpg"
       ]
     },
