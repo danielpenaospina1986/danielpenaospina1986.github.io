@@ -443,7 +443,9 @@
       "cover": "tierralinda.jpg",
       "imgs": [
         "tierralinda.jpg",
-        "tierralinda_2.jpg"
+        "tierralinda_2.jpg",
+        "tierralinda_3.jpg",
+        "tierralinda_4.jpg"
       ]
     },
     {
@@ -958,6 +960,31 @@
       "cover": "cochabamba_1.jpg",
       "imgs": [
         "cochabamba_1.jpg"
+      ]
+    },
+    {
+      "id": "lacampana",
+      "hier": 3,
+      "use": "educational",
+      "title": "La Campana Kindergarten",
+      "title_es": "Jardín Infantil La Campana",
+      "use_label": "",
+      "use_label_es": "",
+      "location": "Medellín, Colombia",
+      "location_es": "",
+      "badge": "",
+      "badge_es": "",
+      "role": "Design + Visualization",
+      "role_es": "Diseño + Visualización",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "",
+      "desc": "Public kindergarten for a steep hillside neighborhood — a brick base topped by a timber-louvered volume, with a ramped play deck that follows the slope.",
+      "desc_es": "Jardín infantil público para un barrio de ladera — una base de ladrillo coronada por un volumen de persianas de madera, con una rampa-terraza de juegos que sigue la pendiente.",
+      "cover": "lacampana_1.jpg",
+      "imgs": [
+        "lacampana_1.jpg"
       ]
     }
   ]
