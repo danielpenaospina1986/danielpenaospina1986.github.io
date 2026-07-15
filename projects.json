@@ -671,7 +671,7 @@
     },
     {
       "id": "swiss",
-      "hier": 3,
+      "hier": 4,
       "use": "residential",
       "title": "Swiss Living Suites",
       "title_es": "Swiss Living Suites",
@@ -689,7 +689,7 @@
       "team": "Gómez Piedrahita Arquitectos",
       "desc": "Suites complex on a wooded hillside — stepped brick volumes that follow the slope. The gallery moves from design renders to the built result, closing with typical floor and unit plans.",
       "desc_es": "Complejo de suites en una ladera arbolada — volúmenes escalonados en ladrillo que siguen la pendiente. La galería va de los renders al resultado construido, y cierra con plantas típicas y de unidades.",
-      "cover": "swiss_4.jpg",
+      "cover": "swiss_1.jpg",
       "imgs": [
         "swiss_1.jpg",
         "swiss_2.jpg",
@@ -792,7 +792,7 @@
       "duration_es": "",
       "tools": "",
       "team": "Daniel Peña Ospina",
-      "hier": 3,
+      "hier": 5,
       "id": "joaquina",
       "use": "residential",
       "title": "La Joaquina",
@@ -953,7 +953,7 @@
       "duration_es": "",
       "tools": "",
       "team": "A+U Arquitectos Urbanistas",
-      "hier": 3,
+      "hier": 4,
       "id": "cochabamba",
       "use": "masterplan",
       "title": "Cochabamba Master Plan",
@@ -961,12 +961,12 @@
       "location": "Cochabamba, Bolivia",
       "desc": "Hillside master plan combining housing blocks, a stadium, sports facilities and public buildings on a plateau above the valley.",
       "desc_es": "Master plan en ladera que combina bloques de vivienda, un estadio, equipamientos deportivos y edificios públicos sobre una meseta del valle.",
-      "cover": "cochabamba_1.jpg",
+      "cover": "cochabamba_4.jpg",
       "imgs": [
+        "cochabamba_4.jpg",
         "cochabamba_1.jpg",
-        "cochabamba_2.jpg",
         "cochabamba_3.jpg",
-        "cochabamba_4.jpg"
+        "cochabamba_2.jpg"
       ]
     },
     {
