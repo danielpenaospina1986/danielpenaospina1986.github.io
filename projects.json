@@ -54,11 +54,6 @@
       "id": "masterplan",
       "en": "Master Plan",
       "es": "Master Plan"
-    },
-    {
-      "id": "mixeduse",
-      "en": "Mixed Use",
-      "es": "Uso Mixto"
     }
   ],
   "projects": [
@@ -580,14 +575,14 @@
     },
     {
       "id": "mariacano",
-      "hier": 2,
+      "hier": 3,
       "use": "educational",
       "title": "María Cano University",
       "title_es": "Universidad María Cano",
       "use_label": "",
       "use_label_es": "",
       "location": "Medellín, Colombia",
-      "location_es": "",
+      "location_es": "Medellín, Colombia",
       "badge": "BIM Manager",
       "badge_es": "",
       "role": "Role: BIM Manager",
@@ -639,8 +634,8 @@
       "id": "lamariagym",
       "hier": 3,
       "use": "sports",
-      "title": "La María Gym",
-      "title_es": "Gimnasio La María",
+      "title": "Yerbabuena Gym",
+      "title_es": "Gimnasio Yerbabuena",
       "use_label": "",
       "use_label_es": "",
       "location": "Bogotá, Colombia",
