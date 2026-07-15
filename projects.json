@@ -440,13 +440,13 @@
       "team": "A+U Arquitectos Urbanistas",
       "desc": "Affordable housing (VIS) development in Bello set against the mountains of the Aburrá Valley — 35 stories, 16 units per floor, by A+U Arquitectos Urbanistas. I produced all the sales-room imagery and the BIM model used for MEP coordination.",
       "desc_es": "Desarrollo de vivienda VIS en Bello frente a las montañas del Valle de Aburrá — 35 pisos, 16 unidades por planta, de A+U Arquitectos Urbanistas. Produje todas las imágenes para salas de ventas y el modelo BIM usado para la coordinación MEP.",
-      "cover": "tierralinda.jpg",
+      "cover": "tierralinda_5.jpg",
       "imgs": [
-        "tierralinda.jpg",
-        "tierralinda_2.jpg",
+        "tierralinda_5.jpg",
         "tierralinda_3.jpg",
+        "tierralinda_2.jpg",
         "tierralinda_4.jpg",
-        "tierralinda_5.jpg"
+        "tierralinda.jpg"
       ]
     },
     {
@@ -480,7 +480,7 @@
     },
     {
       "id": "cerrito",
-      "hier": 3,
+      "hier": 4,
       "use": "residential",
       "title": "Cerrito",
       "title_es": "Cerrito",
@@ -719,11 +719,11 @@
       "team": "Convel S.A.S",
       "desc": "Social housing (VIS) development in Soledad, Atlántico, built around shared amenities — a lap pool, sports court and social buildings between the towers. As Project Architect with Convel, I led the integral design from concept through DD and part of the CDs.",
       "desc_es": "Desarrollo de vivienda de interés social en Soledad, Atlántico, organizado alrededor de amenidades compartidas — piscina, cancha y edificios sociales entre las torres. Como Arquitecto de Proyecto en Convel lideré el desarrollo integral del diseño, desde el concepto hasta el DD y parte de los CD.",
-      "cover": "solemio_1.jpg",
+      "cover": "solemio_2.jpg",
       "imgs": [
-        "solemio_1.jpg",
         "solemio_2.jpg",
         "solemio_3.jpg",
+        "solemio_1.jpg",
         "solemio_4.jpg",
         "solemio_5.jpg"
       ]
@@ -844,7 +844,7 @@
       "duration_es": "",
       "tools": "",
       "team": "A+U Arquitectos Urbanistas",
-      "hier": 3,
+      "hier": 5,
       "id": "arquidiocesis",
       "use": "civic",
       "title": "Archdiocese of Medellín",
@@ -871,7 +871,7 @@
       "duration_es": "",
       "tools": "",
       "team": "Consorcio Espinosa Arquitectos + Coninsa Ramón H.",
-      "hier": 3,
+      "hier": 2,
       "id": "tayrona",
       "use": "commercial",
       "title": "Tayrona Shopping Mall",
@@ -879,10 +879,10 @@
       "location": "Santa Marta, Colombia",
       "desc": "Shopping mall with a tensile-roofed food court and tree-filled circulation atriums — renders and technical sections of both phases.",
       "desc_es": "Centro comercial con plazoleta de comidas bajo cubierta tensada y atrios de circulación arborizados — renders y cortes técnicos de ambas etapas.",
-      "cover": "tayrona_1.jpg",
+      "cover": "tayrona_2.jpg",
       "imgs": [
-        "tayrona_1.jpg",
         "tayrona_2.jpg",
+        "tayrona_1.jpg",
         "tayrona_3.jpg",
         "tayrona_4.jpg"
       ]
@@ -924,7 +924,7 @@
       "duration_es": "",
       "tools": "",
       "team": "Constructora Prohogar (promotor)",
-      "hier": 3,
+      "hier": 5,
       "id": "vegasdelrio",
       "use": "mixeduse",
       "title": "Vegas del Río",
