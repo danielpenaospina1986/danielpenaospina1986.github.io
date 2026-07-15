@@ -445,7 +445,8 @@
         "tierralinda.jpg",
         "tierralinda_2.jpg",
         "tierralinda_3.jpg",
-        "tierralinda_4.jpg"
+        "tierralinda_4.jpg",
+        "tierralinda_5.jpg"
       ]
     },
     {
@@ -934,7 +935,9 @@
       "desc_es": "Desarrollo de uso mixto en Caldas, Antioquia, promovido por Constructora Prohogar — torre residencial con primer piso comercial. Produje las imágenes del proyecto y la estructuración del esquema básico.",
       "cover": "vegasdelrio_1.jpg",
       "imgs": [
-        "vegasdelrio_1.jpg"
+        "vegasdelrio_1.jpg",
+        "vegasdelrio_2.jpg",
+        "vegasdelrio_3.jpg"
       ]
     },
     {
@@ -959,7 +962,10 @@
       "desc_es": "Master plan en ladera que combina bloques de vivienda, un estadio, equipamientos deportivos y edificios públicos sobre una meseta del valle.",
       "cover": "cochabamba_1.jpg",
       "imgs": [
-        "cochabamba_1.jpg"
+        "cochabamba_1.jpg",
+        "cochabamba_2.jpg",
+        "cochabamba_3.jpg",
+        "cochabamba_4.jpg"
       ]
     },
     {
