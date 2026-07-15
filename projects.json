@@ -533,29 +533,28 @@
     },
     {
       "id": "vvc",
-      "hier": 2,
+      "hier": 3,
       "use": "hospitality",
       "title": "VVC Hotel",
       "title_es": "Hotel VVC",
       "use_label": "",
       "use_label_es": "",
       "location": "Villavicencio, Colombia",
-      "location_es": "",
+      "location_es": "Villavicencio, Colombia",
       "badge": "dapo.arq",
-      "badge_es": "",
+      "badge_es": "dapo.arq",
       "role": "Direct proposal to a private client — dapo.arq",
       "role_es": "Propuesta directa a cliente privado — dapo.arq",
       "duration": "4 months",
       "duration_es": "4 meses",
       "tools": "",
       "team": "Daniel Peña Ospina",
-      "desc": "Hotel proposal developed as an independent dapo.arq venture — teaming up with a developer to pitch the project directly to the owner of the site, including the Ibis-branded scheme. Visualizations of the lobby and street presence.",
-      "desc_es": "Propuesta de hotel desarrollada como iniciativa propia de dapo.arq — en alianza con un desarrollador nos acercamos directamente al dueño del lote, incluyendo el esquema con marca Ibis. Visualizaciones del lobby y su presencia urbana.",
+      "desc": "Hotel proposal developed as an independent dapo.arq venture — teaming up with a developer to pitch the project directly to the owner of the site. Visualizations of the lobby and street presence.",
+      "desc_es": "Propuesta de hotel desarrollada como iniciativa propia de dapo.arq — en alianza con un desarrollador nos acercamos directamente al dueño del lote. Visualizaciones del lobby y su presencia urbana.",
       "cover": "vvc_2.jpg",
       "imgs": [
         "vvc_2.jpg",
-        "vvc_1.jpg",
-        "vvc_3.jpg"
+        "vvc_1.jpg"
       ]
     },
     {
@@ -992,6 +991,31 @@
       "imgs": [
         "lacampana_1.jpg"
       ]
+    },
+    {
+      "id": "av_40_tower",
+      "hier": 3,
+      "use": "residential",
+      "title": "Av 40 Tower",
+      "imgs": [
+        "proyecto_vvc_3.jpg"
+      ],
+      "cover": "proyecto_vvc_3.jpg",
+      "title_es": "Av 40 Tower",
+      "badge": "dapo.arq",
+      "badge_es": "dapo.arq",
+      "location": "Villavicencio, Colombia",
+      "location_es": "Villavicencio, Colombia",
+      "use_label": "",
+      "use_label_es": "",
+      "role": "",
+      "role_es": "",
+      "duration": "",
+      "duration_es": "",
+      "tools": "",
+      "team": "dapo.arq",
+      "desc": "Mixed Use building, including Hotel proposal developed as an independent dapo.arq venture — teaming up with a developer to pitch the project directly to the owner of the site. Visualizations of the lobby and street presence.",
+      "desc_es": ""
     }
   ]
 }
