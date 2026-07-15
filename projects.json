@@ -223,9 +223,10 @@
       "cover": "3co_3.jpg",
       "imgs": [
         "3co_1.jpg",
-        "3co_2.jpg",
         "3co_3.jpg",
-        "3co_4.jpg"
+        "3co_1579385255107.jpg",
+        "3co_4.jpg",
+        "3co_2.jpg"
       ]
     },
     {
@@ -685,61 +686,6 @@
         "swiss_4.jpg",
         "swiss_5.jpg",
         "swiss_6.jpg"
-      ]
-    },
-    {
-      "id": "solemio",
-      "hier": 3,
-      "use": "residential",
-      "title": "Altos de Solemio",
-      "title_es": "Altos de Solemio",
-      "use_label": "Affordable housing",
-      "use_label_es": "Vivienda VIS",
-      "location": "Colombia",
-      "location_es": "",
-      "badge": "",
-      "badge_es": "",
-      "role": "Role: Senior Architect · BIM Developer",
-      "role_es": "Rol: Arquitecto Senior · Desarrollador BIM",
-      "duration": "",
-      "duration_es": "",
-      "tools": "Revit",
-      "team": "Convel S.A.S",
-      "desc": "Affordable housing development built around shared amenities — a lap pool, sports court and social buildings between the towers. Shown as built, from the air to the unit interiors.",
-      "desc_es": "Desarrollo de vivienda asequible organizado alrededor de amenidades compartidas — piscina, cancha y edificios sociales entre las torres. Mostrado construido, desde el aire hasta el interior de las unidades.",
-      "cover": "solemio_1.jpg",
-      "imgs": [
-        "solemio_1.jpg",
-        "solemio_2.jpg",
-        "solemio_3.jpg",
-        "solemio_4.jpg",
-        "solemio_5.jpg"
-      ]
-    },
-    {
-      "id": "comodisimos",
-      "hier": 3,
-      "use": "industrial",
-      "title": "Comodísimos Plant",
-      "title_es": "Planta Comodísimos",
-      "use_label": "",
-      "use_label_es": "",
-      "location": "Colombia",
-      "location_es": "",
-      "badge": "",
-      "badge_es": "",
-      "role": "",
-      "role_es": "",
-      "duration": "",
-      "duration_es": "",
-      "tools": "",
-      "team": "",
-      "desc": "Industrial facility for mattress maker Comodísimos — a folded dark-metal envelope that reorganizes the street front and loading bays of the plant. Street captures of the built result.",
-      "desc_es": "Instalación industrial para Comodísimos — una envolvente metálica oscura plegada que reorganiza el frente urbano y los muelles de carga de la planta. Capturas de calle del resultado construido.",
-      "cover": "comodisimos_1.jpg",
-      "imgs": [
-        "comodisimos_1.jpg",
-        "comodisimos_2.jpg"
       ]
     }
   ]
