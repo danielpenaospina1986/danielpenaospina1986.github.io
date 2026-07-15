@@ -1019,6 +1019,35 @@
       "team": "dapo.arq",
       "desc": "Mixed Use building, including Hotel proposal developed as an independent dapo.arq venture — teaming up with a developer to pitch the project directly to the owner of the site. Visualizations of the lobby and street presence.",
       "desc_es": ""
+    },
+    {
+      "id": "parques_tricentenario",
+      "hier": 2,
+      "use": "urbanism",
+      "title": "Parques Tricentenario",
+      "imgs": [
+        "proyecto_parques_tricentenario_1.jpg",
+        "proyecto_parquestri3.jpg",
+        "proyecto_parquestri2.jpg",
+        "proyecto_entrega_parques_2.jpg",
+        "proyecto_entrega_parques_1.jpg"
+      ],
+      "cover": "proyecto_parques_tricentenario_1.jpg",
+      "title_es": "",
+      "badge": "",
+      "badge_es": "",
+      "location": "",
+      "location_es": "",
+      "use_label": "",
+      "use_label_es": "",
+      "role": "Senior Architect",
+      "role_es": "",
+      "duration": "1 year",
+      "duration_es": "1 año",
+      "tools": "",
+      "team": "EDU - Empresa de Desarrolo Urbano",
+      "desc": "",
+      "desc_es": ""
     }
   ]
 }
