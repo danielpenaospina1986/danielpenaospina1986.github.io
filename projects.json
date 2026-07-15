@@ -54,6 +54,11 @@
       "id": "masterplan",
       "en": "Master Plan",
       "es": "Master Plan"
+    },
+    {
+      "id": "mixeduse",
+      "en": "Mixed Use",
+      "es": "Uso Mixto"
     }
   ],
   "projects": [
