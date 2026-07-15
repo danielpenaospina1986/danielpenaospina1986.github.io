@@ -660,7 +660,7 @@
     {
       "id": "swiss",
       "hier": 3,
-      "use": "hospitality",
+      "use": "residential",
       "title": "Swiss Living Suites",
       "title_es": "Swiss Living Suites",
       "use_label": "",
@@ -677,7 +677,7 @@
       "team": "",
       "desc": "Suites complex on a wooded hillside — stepped brick volumes that follow the slope. The gallery moves from design renders to the built result, closing with typical floor and unit plans.",
       "desc_es": "Complejo de suites en una ladera arbolada — volúmenes escalonados en ladrillo que siguen la pendiente. La galería va de los renders al resultado construido, y cierra con plantas típicas y de unidades.",
-      "cover": "swiss_1.jpg",
+      "cover": "swiss_4.jpg",
       "imgs": [
         "swiss_1.jpg",
         "swiss_2.jpg",
