@@ -371,7 +371,7 @@
     },
     {
       "id": "comfama",
-      "hier": 3,
+      "hier": 2,
       "use": "educational",
       "title": "Comfama Kindergarten",
       "title_es": "Jardín Infantil Comfama",
@@ -534,7 +534,7 @@
     },
     {
       "id": "vvc",
-      "hier": 3,
+      "hier": 2,
       "use": "hospitality",
       "title": "VVC Hotel",
       "title_es": "Hotel VVC",
