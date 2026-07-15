@@ -424,7 +424,7 @@
     },
     {
       "id": "tierralinda",
-      "hier": 3,
+      "hier": 4,
       "use": "residential",
       "title": "Tierra Linda",
       "title_es": "Tierra Linda",
@@ -703,7 +703,7 @@
     },
     {
       "id": "solemio",
-      "hier": 3,
+      "hier": 2,
       "use": "residential",
       "title": "Altos de Solemio",
       "title_es": "Altos de Solemio",
@@ -768,7 +768,7 @@
       "duration_es": "",
       "tools": "",
       "team": "Javier Vera Arquitectura y Urbanismo",
-      "hier": 3,
+      "hier": 5,
       "id": "acuarela",
       "use": "residential",
       "title": "Casa La Acuarela",
@@ -955,7 +955,7 @@
       "duration_es": "",
       "tools": "",
       "team": "A+U Arquitectos Urbanistas",
-      "hier": 4,
+      "hier": 5,
       "id": "cochabamba",
       "use": "masterplan",
       "title": "Cochabamba Master Plan",
@@ -999,7 +999,7 @@
     {
       "id": "av_40_tower",
       "hier": 3,
-      "use": "residential",
+      "use": "mixeduse",
       "title": "Av 40 Tower",
       "imgs": [
         "proyecto_vvc_3.jpg"
