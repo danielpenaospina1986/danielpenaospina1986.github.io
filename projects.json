@@ -606,11 +606,10 @@
       "team": "A+U Arquitectos Urbanistas",
       "desc": "New tower for the María Cano University Foundation in Medellín. Led BIM coordination and modeling protocols; the full Revit model was developed in-house — model views close the gallery.",
       "desc_es": "Nueva torre para la Fundación Universitaria María Cano en Medellín. Lideré la coordinación BIM y los protocolos de modelado; el modelo Revit completo se desarrolló internamente — las vistas del modelo cierran la galería.",
-      "cover": "mariacano_3.jpg",
+      "cover": "mariacano_mariacano_2.jpg",
       "imgs": [
-        "mariacano_1.jpg",
-        "mariacano_2.jpg",
-        "mariacano_3.jpg",
+        "mariacano_mariacano_2.jpg",
+        "mariacano_mariacano_1.jpg",
         "mariacano_rvt_1.jpg",
         "mariacano_rvt_2.jpg"
       ]
