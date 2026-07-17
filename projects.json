@@ -729,7 +729,7 @@
     },
     {
       "id": "comodisimos",
-      "hier": 4,
+      "hier": 5,
       "use": "industrial",
       "title": "Comodísimos Plant",
       "title_es": "Planta Comodísimos",
@@ -747,10 +747,10 @@
       "team": "Convel S.A.S",
       "desc": "Expansion of the existing Comodísimos factory — the new loading docks the plant lacked, taken from the initial proposal through the CD set and construction follow-up, as part of the Convel design team.",
       "desc_es": "Ampliación de la fábrica existente de Comodísimos — los nuevos muelles de carga que la planta no tenía, desarrollados desde la propuesta inicial hasta la entrega de CD y el seguimiento de obra, como parte del equipo de Convel.",
-      "cover": "comodisimos_1.jpg",
+      "cover": "comodisimos_2.jpg",
       "imgs": [
-        "comodisimos_1.jpg",
-        "comodisimos_2.jpg"
+        "comodisimos_2.jpg",
+        "comodisimos_1.jpg"
       ]
     },
     {
