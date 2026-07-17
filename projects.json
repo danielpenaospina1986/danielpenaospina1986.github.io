@@ -1124,12 +1124,12 @@
       "location": "Medellín, Colombia",
       "desc": "Megacentro shopping mall in downtown Medellín, with A+U Arquitectos Urbanistas. As Project Architect I developed the concept design and the DD, and built the BIM model and led its coordination.",
       "desc_es": "Centro comercial Megacentro en el centro de Medellín, con A+U Arquitectos Urbanistas. Como Arquitecto de Proyecto desarrollé el diseño conceptual y el DD, y construí el modelo BIM y lideré su coordinación.",
-      "cover": "megacentro_1.jpg",
+      "cover": "megacentro_3.jpg",
       "imgs": [
-        "megacentro_1.jpg",
-        "megacentro_2.jpg",
         "megacentro_3.jpg",
-        "megacentro_4.jpg"
+        "megacentro_1.jpg",
+        "megacentro_4.jpg",
+        "megacentro_2.jpg"
       ]
     }
   ]
