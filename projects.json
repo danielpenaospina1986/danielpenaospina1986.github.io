@@ -162,14 +162,14 @@
       "location_es": "",
       "badge": "",
       "badge_es": "",
-      "role": "Role: Design Architect — concept to DD & permits",
-      "role_es": "Rol: Arquitecto de diseño — de concepto a DD y permisos",
+      "role": "Role: Senior Architect · ~1,615,000 SF · Concept + DD",
+      "role_es": "Rol: Arquitecto Senior · ~150.000 m² · Concepto + DD",
       "duration": "2 years",
       "duration_es": "2 años",
       "tools": "Revit - DD development",
       "team": "Consorcio AIA + Coninsa Ramón H. + A+U",
-      "desc": "Developed from site analysis and concept design through DD and the permit drawings, up to the structuring of the executive project — the full DD modeled in Revit as part of the Coninsa Ramón H. team. CDs were completed by another firm after the project was sold to a multinational mid-development. Featured in Abrasce's Shopping Centers magazine (ed. 245).",
-      "desc_es": "Desarrollado desde el análisis del lote y el diseño conceptual hasta el DD y los planos de permisos en curaduría, incluyendo la estructuración del proyecto ejecutivo — todo el DD modelado en Revit como parte del equipo de Coninsa Ramón H. Los CD los tomó otra compañía tras la venta del proyecto a una multinacional sobre la marcha. Destacado en la revista Shopping Centers de Abrasce (ed. 245).",
+      "desc": "One of Medellín's largest malls — now built. Delivered as part of a three-firm consortium (A+U · Coninsa Ramón H · AIA), developed from site analysis through concept design and the full DD in Revit, up to the structuring of the executive project. CDs were completed by another firm after the project was sold to a multinational mid-development. Featured in Abrasce's Shopping Centers magazine (ed. 245).",
+      "desc_es": "Uno de los centros comerciales más grandes de Medellín — hoy construido. Ejecutado en consorcio de tres firmas (A+U · Coninsa Ramón H · AIA), desarrollado desde el análisis del lote hasta el diseño conceptual y el DD completo en Revit, incluida la estructuración del proyecto ejecutivo. Los CD los tomó otra compañía tras la venta del proyecto a una multinacional sobre la marcha. Destacado en la revista Shopping Centers de Abrasce (ed. 245).",
       "cover": "arkadia_1.jpg",
       "imgs": [
         "arkadia_1.jpg",
@@ -367,7 +367,16 @@
       "imgs": [
         "lima_tower.jpg",
         "lima_interior.jpg"
-      ]
+      ],
+      "comp": {
+        "order": 1,
+        "rank": "Honorable mention",
+        "rank_es": "Mención honorífica",
+        "event": "Rascacielos 2013 · international open competition",
+        "event_es": "Rascacielos 2013 · concurso internacional abierto",
+        "place": "Lima, Perú",
+        "place_es": "Lima, Perú"
+      }
     },
     {
       "id": "comfama",
@@ -394,7 +403,16 @@
         "comfama_2.jpg",
         "comfama_1.jpg",
         "comfama_3.jpg"
-      ]
+      ],
+      "comp": {
+        "order": 2,
+        "rank": "1st place",
+        "rank_es": "1er puesto",
+        "event": "Private design competition",
+        "event_es": "Concurso privado de diseño",
+        "place": "La Estrella, Colombia",
+        "place_es": "La Estrella, Colombia"
+      }
     },
     {
       "id": "ucaribe",
@@ -419,7 +437,16 @@
       "cover": "ucaribe.jpg",
       "imgs": [
         "ucaribe.jpg"
-      ]
+      ],
+      "comp": {
+        "order": 3,
+        "rank": "1st place",
+        "rank_es": "1er puesto",
+        "event": "Private design competition",
+        "event_es": "Concurso privado de diseño",
+        "place": "Barranquilla, Colombia",
+        "place_es": "Barranquilla, Colombia"
+      }
     },
     {
       "id": "tierralinda",
@@ -639,7 +666,16 @@
         "centenario_plancha_1.jpg",
         "centenario_plancha_2.jpg",
         "centenario_plancha_3.jpg"
-      ]
+      ],
+      "comp": {
+        "order": 5,
+        "rank": "2nd place",
+        "rank_es": "2do puesto",
+        "event": "Public art · Bucaramanga 400 years",
+        "event_es": "Arte público · 400 años de Bucaramanga",
+        "place": "Bucaramanga, Colombia",
+        "place_es": "Bucaramanga, Colombia"
+      }
     },
     {
       "id": "lamariagym",
@@ -911,7 +947,16 @@
       "cover": "c2laureles_1.jpg",
       "imgs": [
         "c2laureles_1.jpg"
-      ]
+      ],
+      "comp": {
+        "order": 4,
+        "rank": "1st place",
+        "rank_es": "1er puesto",
+        "event": "Private design competition",
+        "event_es": "Concurso privado de diseño",
+        "place": "Laureles, Medellín",
+        "place_es": "Laureles, Medellín"
+      }
     },
     {
       "use_label": "",
@@ -1038,14 +1083,14 @@
       "location_es": "Medellín, Colombia",
       "use_label": "",
       "use_label_es": "",
-      "role": "Senior Architect",
-      "role_es": "",
+      "role": "Role: Senior Architect · ~144,000 SF · Concept → CD",
+      "role_es": "Rol: Arquitecto Senior · ~13.400 m² · Concepto → CD",
       "duration": "1 year",
       "duration_es": "1 año",
       "tools": "",
       "team": "EDU - Empresa de Desarrolo Urbano",
-      "desc": "",
-      "desc_es": ""
+      "desc": "Renewal of the five public parks of the Tricentenario neighborhood, within the Alcaldía de Medellín's Parques del Río Norte programme, delivered with the EDU. As Senior Architect I led concept design — including the community workshops that shaped the brief — then design development, BIM modeling, permitting through the curaduría and construction documentation.",
+      "desc_es": "Renovación de los cinco parques públicos del barrio Tricentenario, dentro del programa Parques del Río Norte de la Alcaldía de Medellín, ejecutado con la EDU. Como Arquitecto Senior lideré el diseño conceptual — incluidos los talleres de socialización con la comunidad que definieron el brief — y luego el desarrollo de diseño, el modelado BIM, los permisos ante la curaduría y la documentación para construcción."
     },
     {
       "use_label": "Cultural",
